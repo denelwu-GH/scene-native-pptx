@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.tmp
+*.log
+~$*.pptx
+.codex/
+dist/
+build/
+regression-output*/

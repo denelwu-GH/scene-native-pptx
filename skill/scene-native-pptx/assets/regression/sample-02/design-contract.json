@@ -1,0 +1,476 @@
+{
+  "schemaVersion": "1.0.0",
+  "metadata": {
+    "name": "Synthetic hybrid service journey",
+    "sourceReference": "reference.png"
+  },
+  "mode": "hybrid-fidelity",
+  "canvas": {
+    "width": 1600,
+    "height": 900,
+    "units": "px"
+  },
+  "regions": [
+    {
+      "id": "region-header",
+      "role": "title-area",
+      "bbox": [
+        50,
+        24,
+        1500,
+        90
+      ],
+      "z": 10
+    },
+    {
+      "id": "region-journey",
+      "role": "service-stages",
+      "bbox": [
+        50,
+        150,
+        1500,
+        300
+      ],
+      "z": 20
+    },
+    {
+      "id": "region-policy",
+      "role": "hybrid-policy",
+      "bbox": [
+        50,
+        460,
+        1500,
+        290
+      ],
+      "z": 20
+    },
+    {
+      "id": "region-footer",
+      "role": "takeaway",
+      "bbox": [
+        50,
+        755,
+        1500,
+        110
+      ],
+      "z": 20
+    }
+  ],
+  "texts": [
+    {
+      "id": "title",
+      "text": "Media-Rich Service Journey",
+      "role": "label",
+      "bbox": [
+        62,
+        30,
+        760,
+        50
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 38,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "subtitle",
+      "text": "Native layout with isolated, replaceable artwork",
+      "role": "label",
+      "bbox": [
+        62,
+        76,
+        720,
+        30
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 18,
+        "weight": 500,
+        "color": "#475569"
+      }
+    },
+    {
+      "id": "status",
+      "text": "HYBRID MODE",
+      "role": "label",
+      "bbox": [
+        1370,
+        48,
+        158,
+        34
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 13,
+        "weight": 700,
+        "color": "#0F766E"
+      }
+    },
+    {
+      "id": "stage-title-0",
+      "text": "Discover",
+      "role": "label",
+      "bbox": [
+        134,
+        354,
+        200,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 22,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "stage-desc-0",
+      "text": "Understand the request",
+      "role": "label",
+      "bbox": [
+        110,
+        386,
+        248,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "stage-title-1",
+      "text": "Compose",
+      "role": "label",
+      "bbox": [
+        512,
+        354,
+        200,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 22,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "stage-desc-1",
+      "text": "Assemble the response",
+      "role": "label",
+      "bbox": [
+        488,
+        386,
+        248,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "stage-title-2",
+      "text": "Protect",
+      "role": "label",
+      "bbox": [
+        890,
+        354,
+        200,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 22,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "stage-desc-2",
+      "text": "Apply policy checks",
+      "role": "label",
+      "bbox": [
+        866,
+        386,
+        248,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "stage-title-3",
+      "text": "Measure",
+      "role": "label",
+      "bbox": [
+        1268,
+        354,
+        200,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 22,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "stage-desc-3",
+      "text": "Capture the outcome",
+      "role": "label",
+      "bbox": [
+        1244,
+        386,
+        248,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "metric-value-0",
+      "text": "4",
+      "role": "label",
+      "bbox": [
+        128,
+        617,
+        60,
+        38
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 26,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "metric-label-0",
+      "text": "replaceable assets",
+      "role": "label",
+      "bbox": [
+        228,
+        624,
+        210,
+        28
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 15,
+        "weight": 500,
+        "color": "#475569"
+      }
+    },
+    {
+      "id": "metric-value-1",
+      "text": "100%",
+      "role": "label",
+      "bbox": [
+        548,
+        617,
+        60,
+        38
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 26,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "metric-label-1",
+      "text": "editable text",
+      "role": "label",
+      "bbox": [
+        648,
+        624,
+        210,
+        28
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 15,
+        "weight": 500,
+        "color": "#475569"
+      }
+    },
+    {
+      "id": "metric-value-2",
+      "text": "0",
+      "role": "label",
+      "bbox": [
+        968,
+        617,
+        60,
+        38
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 26,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "metric-label-2",
+      "text": "remote URLs",
+      "role": "label",
+      "bbox": [
+        1068,
+        624,
+        210,
+        28
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 15,
+        "weight": 500,
+        "color": "#475569"
+      }
+    },
+    {
+      "id": "panel-title",
+      "text": "The semantic layout stays editable",
+      "role": "label",
+      "bbox": [
+        104,
+        493,
+        760,
+        40
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 26,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "panel-body",
+      "text": "Artwork is isolated into four local image objects; titles, cards, arrows, metrics, and callouts remain native PowerPoint content.",
+      "role": "label",
+      "bbox": [
+        104,
+        536,
+        1320,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 16,
+        "weight": 500,
+        "color": "#475569"
+      }
+    },
+    {
+      "id": "footer-title",
+      "text": "Hybrid fidelity rule",
+      "role": "label",
+      "bbox": [
+        104,
+        786,
+        180,
+        30
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 18,
+        "weight": 700,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "footer-body",
+      "text": "Rasterize only the artwork that cannot be represented safely in DrawingML.",
+      "role": "label",
+      "bbox": [
+        310,
+        786,
+        980,
+        30
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 16,
+        "weight": 500,
+        "color": "#CBD5E1"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset-0",
+      "kind": "illustration",
+      "semantic": "discover",
+      "bbox": [
+        152,
+        194,
+        164,
+        164
+      ],
+      "policy": "local-raster-png"
+    },
+    {
+      "id": "asset-1",
+      "kind": "illustration",
+      "semantic": "compose",
+      "bbox": [
+        530,
+        194,
+        164,
+        164
+      ],
+      "policy": "local-raster-png"
+    },
+    {
+      "id": "asset-2",
+      "kind": "illustration",
+      "semantic": "protect",
+      "bbox": [
+        908,
+        194,
+        164,
+        164
+      ],
+      "policy": "local-raster-png"
+    },
+    {
+      "id": "asset-3",
+      "kind": "illustration",
+      "semantic": "measure",
+      "bbox": [
+        1286,
+        194,
+        164,
+        164
+      ],
+      "policy": "local-raster-png"
+    }
+  ],
+  "connectors": [
+    {
+      "id": "connector-stage-flow",
+      "from": "region-journey",
+      "to": "region-policy",
+      "routing": "left-to-right"
+    }
+  ]
+}

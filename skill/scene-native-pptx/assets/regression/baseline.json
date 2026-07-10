@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "validatedAt": "2026-07-10T16:35:09+08:00",
+  "fixtures": "public-synthetic",
+  "powerPoint": {
+    "version": "16.107",
+    "open": "pass",
+    "save": "pass",
+    "close": "pass",
+    "reopen": "pass",
+    "repairPrompt": false
+  },
+  "sample01": {
+    "profile": "native-first",
+    "contractTexts": 28,
+    "nativeShapes": 70,
+    "groups": 6,
+    "pictures": 0,
+    "textRuns": 28,
+    "conversionSkipped": 0,
+    "pptVsSvgMae": 4.529554398148148,
+    "pptxSize": 14735,
+    "pptxSha256": "915af3e01635f5a1f2fc739fc3a0c955061b0862364c1029fa208776ce118a9f"
+  },
+  "sample02": {
+    "profile": "hybrid-fidelity",
+    "contractTexts": 21,
+    "nativeShapes": 38,
+    "groups": 4,
+    "pictures": 4,
+    "textRuns": 21,
+    "conversionSkipped": 0,
+    "pptVsSvgMae": 4.341990740740741,
+    "pptxSize": 19778,
+    "pptxSha256": "a3534680d20dc493f0dd356e49aae07ba363e79e0e42ee590cd8b5f8c2e37869"
+  },
+  "combined": {
+    "slides": 2,
+    "contractTexts": 49,
+    "pptxSize": 25065,
+    "pptxSha256": "f57b678b8d5df20a90974c973755543f2e5e6c8a393ec8d5bf4f4c49a1b79656",
+    "deterministicRebuild": "pass",
+    "zipIntegrity": "pass",
+    "packageValidation": "pass",
+    "textValidation": "pass",
+    "overflow": "pass"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "benchmarkDate": "2026-07-10",
+  "scale": "0-10",
+  "weights": {
+    "visualFidelity": 0.30,
+    "editability": 0.25,
+    "powerPointSafety": 0.20,
+    "repeatability": 0.15,
+    "fileEfficiency": 0.10
+  },
+  "routes": [
+    {
+      "id": "layered-raster",
+      "label": "Layered raster + editable text",
+      "visualFidelity": 8.2,
+      "editability": 4.5,
+      "powerPointSafety": 7.0,
+      "repeatability": 5.8,
+      "fileEfficiency": 5.5,
+      "weightedScore": 6.4,
+      "evidence": {
+        "pptxBytes": 1436413,
+        "editableTextBoxes": 22,
+        "imageLayers": 27,
+        "notes": "Raster base preserves effects, but semantic framework editability and icon matte quality remain limited."
+      }
+    },
+    {
+      "id": "componentized",
+      "label": "Componentized shapes + raster icons",
+      "visualFidelity": 6.5,
+      "editability": 8.0,
+      "powerPointSafety": 7.5,
+      "repeatability": 7.0,
+      "fileEfficiency": 8.7,
+      "weightedScore": 7.4,
+      "evidence": {
+        "pptxBytes": 153557,
+        "nativeShapes": 54,
+        "imageLayers": 26,
+        "editableTextBoxes": 22,
+        "notes": "More editable and compact, but gradients, shadows, and curved connectors are visibly simplified."
+      }
+    },
+    {
+      "id": "html-dom",
+      "label": "HTML/DOM to PPTX",
+      "visualFidelity": 4.7,
+      "editability": 7.5,
+      "powerPointSafety": 8.3,
+      "repeatability": 7.5,
+      "fileEfficiency": 6.8,
+      "weightedScore": 6.8,
+      "evidence": {
+        "pptxBytes": 861732,
+        "nativeShapes": 71,
+        "textRuns": 61,
+        "pictures": 31,
+        "mae": 17.20015671296296,
+        "notes": "No repair prompt, but the complex test showed title overlap, hub deformation, and rich-text drift."
+      }
+    },
+    {
+      "id": "svg-poc",
+      "label": "Constrained SVG proof of concept",
+      "visualFidelity": 8.3,
+      "editability": 9.0,
+      "powerPointSafety": 9.3,
+      "repeatability": 8.2,
+      "fileEfficiency": 9.8,
+      "weightedScore": 8.8,
+      "evidence": {
+        "pptxBytes": 23986,
+        "nativeShapes": 174,
+        "textRuns": 63,
+        "groups": 10,
+        "pictures": 0,
+        "mae": 14.760613441467285,
+        "notes": "Strong conversion result, before formalizing the semantic contract and complete regression gates."
+      }
+    },
+    {
+      "id": "scene-native",
+      "label": "Scene JSON + constrained SVG + DrawingML",
+      "visualFidelity": 8.8,
+      "editability": 9.5,
+      "powerPointSafety": 9.8,
+      "repeatability": 9.6,
+      "fileEfficiency": 9.8,
+      "weightedScore": 9.4,
+      "evidence": {
+        "pptxBytes": 24512,
+        "nativeShapes": 185,
+        "textRuns": 63,
+        "groups": 10,
+        "pictures": 0,
+        "pptVsSvgMae": 14.008278472222223,
+        "powerPointRoundTrip": "pass",
+        "repairPrompt": false,
+        "notes": "Adds a design contract, semantic scene, deterministic build, package checks, and two-sample regression."
+      }
+    }
+  ]
+}

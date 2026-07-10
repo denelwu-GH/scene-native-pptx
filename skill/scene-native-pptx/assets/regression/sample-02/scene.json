@@ -1,0 +1,978 @@
+{
+  "schemaVersion": "1.0.0",
+  "mode": "hybrid-fidelity",
+  "metadata": {
+    "name": "Synthetic hybrid service journey",
+    "sourceReference": "reference.png",
+    "editablePolicy": {
+      "mode": "hybrid-fidelity",
+      "images": "isolated-local"
+    }
+  },
+  "canvas": {
+    "width": 1600,
+    "height": 900,
+    "viewBox": "0 0 1600 900",
+    "units": "px"
+  },
+  "components": [
+    {
+      "id": "journey"
+    },
+    {
+      "id": "explanation"
+    },
+    {
+      "id": "footer"
+    }
+  ],
+  "svg": {
+    "attrs": {
+      "xmlns": "http://www.w3.org/2000/svg",
+      "width": 1600,
+      "height": 900,
+      "viewBox": "0 0 1600 900"
+    },
+    "defs": {
+      "type": "defs",
+      "attrs": {},
+      "children": [
+        {
+          "type": "linearGradient",
+          "attrs": {
+            "id": "bg",
+            "x1": "0",
+            "y1": "0",
+            "x2": "1",
+            "y2": "1"
+          },
+          "children": [
+            {
+              "type": "stop",
+              "attrs": {
+                "offset": "0",
+                "stop-color": "#FFFFFF"
+              },
+              "children": []
+            },
+            {
+              "type": "stop",
+              "attrs": {
+                "offset": "0.58",
+                "stop-color": "#F8FAFC"
+              },
+              "children": []
+            },
+            {
+              "type": "stop",
+              "attrs": {
+                "offset": "1",
+                "stop-color": "#EEF6FF"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "linearGradient",
+          "attrs": {
+            "id": "accent",
+            "x1": "0",
+            "y1": "0",
+            "x2": "1",
+            "y2": "1"
+          },
+          "children": [
+            {
+              "type": "stop",
+              "attrs": {
+                "offset": "0",
+                "stop-color": "#22D3EE"
+              },
+              "children": []
+            },
+            {
+              "type": "stop",
+              "attrs": {
+                "offset": "0.55",
+                "stop-color": "#2563EB"
+              },
+              "children": []
+            },
+            {
+              "type": "stop",
+              "attrs": {
+                "offset": "1",
+                "stop-color": "#1E3A8A"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "radialGradient",
+          "attrs": {
+            "id": "hub-gradient",
+            "cx": "35%",
+            "cy": "28%",
+            "r": "75%"
+          },
+          "children": [
+            {
+              "type": "stop",
+              "attrs": {
+                "offset": "0",
+                "stop-color": "#67E8F9"
+              },
+              "children": []
+            },
+            {
+              "type": "stop",
+              "attrs": {
+                "offset": "0.48",
+                "stop-color": "#2563EB"
+              },
+              "children": []
+            },
+            {
+              "type": "stop",
+              "attrs": {
+                "offset": "1",
+                "stop-color": "#172554"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "filter",
+          "attrs": {
+            "id": "shadow",
+            "x": "-20%",
+            "y": "-20%",
+            "width": "140%",
+            "height": "150%"
+          },
+          "children": [
+            {
+              "type": "feGaussianBlur",
+              "attrs": {
+                "in": "SourceAlpha",
+                "stdDeviation": "7"
+              },
+              "children": []
+            },
+            {
+              "type": "feOffset",
+              "attrs": {
+                "dx": "0",
+                "dy": "5",
+                "result": "off"
+              },
+              "children": []
+            },
+            {
+              "type": "feFlood",
+              "attrs": {
+                "flood-color": "#0F3F78",
+                "flood-opacity": "0.15"
+              },
+              "children": []
+            },
+            {
+              "type": "feComposite",
+              "attrs": {
+                "in2": "off",
+                "operator": "in"
+              },
+              "children": []
+            },
+            {
+              "type": "feMerge",
+              "attrs": {},
+              "children": [
+                {
+                  "type": "feMergeNode",
+                  "attrs": {},
+                  "children": []
+                },
+                {
+                  "type": "feMergeNode",
+                  "attrs": {
+                    "in": "SourceGraphic"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "layers": [
+      {
+        "type": "g",
+        "attrs": {
+          "id": "background",
+          "data-role": "background"
+        },
+        "children": [
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 0,
+              "y": 0,
+              "width": 1600,
+              "height": 900,
+              "fill": "url(#bg)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": "g",
+        "attrs": {
+          "id": "header",
+          "data-role": "title-area"
+        },
+        "children": [
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-title",
+              "data-text-id": "title",
+              "x": 62,
+              "y": 66,
+              "font-family": "Arial",
+              "font-size": 38,
+              "font-weight": 700,
+              "fill": "#0F172A",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Media-Rich Service Journey"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-subtitle",
+              "data-text-id": "subtitle",
+              "x": 62,
+              "y": 101,
+              "font-family": "Arial",
+              "font-size": 18,
+              "font-weight": 500,
+              "fill": "#475569",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Native layout with isolated, replaceable artwork"
+              }
+            ]
+          },
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 1360,
+              "y": 46,
+              "width": 178,
+              "height": 38,
+              "rx": 19,
+              "fill": "#CCFBF1",
+              "stroke": "#5EEAD4",
+              "stroke-width": 1
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-status",
+              "data-text-id": "status",
+              "x": 1449,
+              "y": 71,
+              "font-family": "Arial",
+              "font-size": 13,
+              "font-weight": 700,
+              "fill": "#0F766E",
+              "text-anchor": "middle",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "HYBRID MODE"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "g",
+        "attrs": {
+          "id": "journey",
+          "data-role": "service-stages"
+        },
+        "children": [
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 62,
+              "y": 170,
+              "width": 344,
+              "height": 258,
+              "rx": 16,
+              "fill": "#FFFFFF",
+              "stroke": "#CBD5E1",
+              "stroke-width": 1.2,
+              "filter": "url(#shadow)"
+            },
+            "children": []
+          },
+          {
+            "type": "image",
+            "attrs": {
+              "id": "art-0",
+              "href": "assets/map.png",
+              "x": 152,
+              "y": 194,
+              "width": 164,
+              "height": 164
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-stage-title-0",
+              "data-text-id": "stage-title-0",
+              "x": 234,
+              "y": 380,
+              "font-family": "Arial",
+              "font-size": 22,
+              "font-weight": 700,
+              "fill": "#0F172A",
+              "text-anchor": "middle",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Discover"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-stage-desc-0",
+              "data-text-id": "stage-desc-0",
+              "x": 234,
+              "y": 406,
+              "font-family": "Arial",
+              "font-size": 14,
+              "font-weight": 500,
+              "fill": "#64748B",
+              "text-anchor": "middle",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Understand the request"
+              }
+            ]
+          },
+          {
+            "type": "line",
+            "attrs": {
+              "x1": 406,
+              "y1": 298,
+              "x2": 440,
+              "y2": 298,
+              "stroke": "#38BDF8",
+              "stroke-width": 5,
+              "stroke-linecap": "round"
+            },
+            "children": []
+          },
+          {
+            "type": "polygon",
+            "attrs": {
+              "points": "432,288 444,298 432,308",
+              "fill": "#38BDF8"
+            },
+            "children": []
+          },
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 440,
+              "y": 170,
+              "width": 344,
+              "height": 258,
+              "rx": 16,
+              "fill": "#FFFFFF",
+              "stroke": "#CBD5E1",
+              "stroke-width": 1.2,
+              "filter": "url(#shadow)"
+            },
+            "children": []
+          },
+          {
+            "type": "image",
+            "attrs": {
+              "id": "art-1",
+              "href": "assets/media.png",
+              "x": 530,
+              "y": 194,
+              "width": 164,
+              "height": 164
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-stage-title-1",
+              "data-text-id": "stage-title-1",
+              "x": 612,
+              "y": 380,
+              "font-family": "Arial",
+              "font-size": 22,
+              "font-weight": 700,
+              "fill": "#0F172A",
+              "text-anchor": "middle",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Compose"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-stage-desc-1",
+              "data-text-id": "stage-desc-1",
+              "x": 612,
+              "y": 406,
+              "font-family": "Arial",
+              "font-size": 14,
+              "font-weight": 500,
+              "fill": "#64748B",
+              "text-anchor": "middle",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Assemble the response"
+              }
+            ]
+          },
+          {
+            "type": "line",
+            "attrs": {
+              "x1": 784,
+              "y1": 298,
+              "x2": 818,
+              "y2": 298,
+              "stroke": "#38BDF8",
+              "stroke-width": 5,
+              "stroke-linecap": "round"
+            },
+            "children": []
+          },
+          {
+            "type": "polygon",
+            "attrs": {
+              "points": "810,288 822,298 810,308",
+              "fill": "#38BDF8"
+            },
+            "children": []
+          },
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 818,
+              "y": 170,
+              "width": 344,
+              "height": 258,
+              "rx": 16,
+              "fill": "#FFFFFF",
+              "stroke": "#CBD5E1",
+              "stroke-width": 1.2,
+              "filter": "url(#shadow)"
+            },
+            "children": []
+          },
+          {
+            "type": "image",
+            "attrs": {
+              "id": "art-2",
+              "href": "assets/shield.png",
+              "x": 908,
+              "y": 194,
+              "width": 164,
+              "height": 164
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-stage-title-2",
+              "data-text-id": "stage-title-2",
+              "x": 990,
+              "y": 380,
+              "font-family": "Arial",
+              "font-size": 22,
+              "font-weight": 700,
+              "fill": "#0F172A",
+              "text-anchor": "middle",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Protect"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-stage-desc-2",
+              "data-text-id": "stage-desc-2",
+              "x": 990,
+              "y": 406,
+              "font-family": "Arial",
+              "font-size": 14,
+              "font-weight": 500,
+              "fill": "#64748B",
+              "text-anchor": "middle",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Apply policy checks"
+              }
+            ]
+          },
+          {
+            "type": "line",
+            "attrs": {
+              "x1": 1162,
+              "y1": 298,
+              "x2": 1196,
+              "y2": 298,
+              "stroke": "#38BDF8",
+              "stroke-width": 5,
+              "stroke-linecap": "round"
+            },
+            "children": []
+          },
+          {
+            "type": "polygon",
+            "attrs": {
+              "points": "1188,288 1200,298 1188,308",
+              "fill": "#38BDF8"
+            },
+            "children": []
+          },
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 1196,
+              "y": 170,
+              "width": 344,
+              "height": 258,
+              "rx": 16,
+              "fill": "#FFFFFF",
+              "stroke": "#CBD5E1",
+              "stroke-width": 1.2,
+              "filter": "url(#shadow)"
+            },
+            "children": []
+          },
+          {
+            "type": "image",
+            "attrs": {
+              "id": "art-3",
+              "href": "assets/chart.png",
+              "x": 1286,
+              "y": 194,
+              "width": 164,
+              "height": 164
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-stage-title-3",
+              "data-text-id": "stage-title-3",
+              "x": 1368,
+              "y": 380,
+              "font-family": "Arial",
+              "font-size": 22,
+              "font-weight": 700,
+              "fill": "#0F172A",
+              "text-anchor": "middle",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Measure"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-stage-desc-3",
+              "data-text-id": "stage-desc-3",
+              "x": 1368,
+              "y": 406,
+              "font-family": "Arial",
+              "font-size": 14,
+              "font-weight": 500,
+              "fill": "#64748B",
+              "text-anchor": "middle",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Capture the outcome"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "g",
+        "attrs": {
+          "id": "explanation",
+          "data-role": "hybrid-policy"
+        },
+        "children": [
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 62,
+              "y": 476,
+              "width": 1476,
+              "height": 252,
+              "rx": 16,
+              "fill": "#FFFFFF",
+              "stroke": "#BFDBFE",
+              "stroke-width": 1.4,
+              "filter": "url(#shadow)"
+            },
+            "children": []
+          },
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 62,
+              "y": 476,
+              "width": 12,
+              "height": 252,
+              "rx": 6,
+              "fill": "url(#accent)"
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-panel-title",
+              "data-text-id": "panel-title",
+              "x": 104,
+              "y": 523,
+              "font-family": "Arial",
+              "font-size": 26,
+              "font-weight": 700,
+              "fill": "#0F172A",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "The semantic layout stays editable"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-panel-body",
+              "data-text-id": "panel-body",
+              "x": 104,
+              "y": 558,
+              "font-family": "Arial",
+              "font-size": 16,
+              "font-weight": 500,
+              "fill": "#475569",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Artwork is isolated into four local image objects; titles, cards, arrows, metrics, and callouts remain native PowerPoint content."
+              }
+            ]
+          },
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 104,
+              "y": 606,
+              "width": 372,
+              "height": 88,
+              "rx": 10,
+              "fill": "#F8FAFC",
+              "stroke": "#E2E8F0",
+              "stroke-width": 1
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-metric-value-0",
+              "data-text-id": "metric-value-0",
+              "x": 128,
+              "y": 646,
+              "font-family": "Arial",
+              "font-size": 26,
+              "font-weight": 700,
+              "fill": "#2563EB",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-metric-label-0",
+              "data-text-id": "metric-label-0",
+              "x": 228,
+              "y": 646,
+              "font-family": "Arial",
+              "font-size": 15,
+              "font-weight": 500,
+              "fill": "#475569",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "replaceable assets"
+              }
+            ]
+          },
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 524,
+              "y": 606,
+              "width": 372,
+              "height": 88,
+              "rx": 10,
+              "fill": "#F8FAFC",
+              "stroke": "#E2E8F0",
+              "stroke-width": 1
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-metric-value-1",
+              "data-text-id": "metric-value-1",
+              "x": 548,
+              "y": 646,
+              "font-family": "Arial",
+              "font-size": 26,
+              "font-weight": 700,
+              "fill": "#2563EB",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "100%"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-metric-label-1",
+              "data-text-id": "metric-label-1",
+              "x": 648,
+              "y": 646,
+              "font-family": "Arial",
+              "font-size": 15,
+              "font-weight": 500,
+              "fill": "#475569",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "editable text"
+              }
+            ]
+          },
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 944,
+              "y": 606,
+              "width": 372,
+              "height": 88,
+              "rx": 10,
+              "fill": "#F8FAFC",
+              "stroke": "#E2E8F0",
+              "stroke-width": 1
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-metric-value-2",
+              "data-text-id": "metric-value-2",
+              "x": 968,
+              "y": 646,
+              "font-family": "Arial",
+              "font-size": 26,
+              "font-weight": 700,
+              "fill": "#0F766E",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-metric-label-2",
+              "data-text-id": "metric-label-2",
+              "x": 1068,
+              "y": 646,
+              "font-family": "Arial",
+              "font-size": 15,
+              "font-weight": 500,
+              "fill": "#475569",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "remote URLs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "g",
+        "attrs": {
+          "id": "footer",
+          "data-role": "takeaway"
+        },
+        "children": [
+          {
+            "type": "rect",
+            "attrs": {
+              "x": 62,
+              "y": 770,
+              "width": 1476,
+              "height": 80,
+              "rx": 12,
+              "fill": "#0F172A"
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-footer-title",
+              "data-text-id": "footer-title",
+              "x": 104,
+              "y": 807,
+              "font-family": "Arial",
+              "font-size": 18,
+              "font-weight": 700,
+              "fill": "#FFFFFF",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Hybrid fidelity rule"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "attrs": {
+              "id": "shape-footer-body",
+              "data-text-id": "footer-body",
+              "x": 310,
+              "y": 807,
+              "font-family": "Arial",
+              "font-size": 16,
+              "font-weight": 500,
+              "fill": "#CBD5E1",
+              "text-anchor": "start",
+              "letter-spacing": 0
+            },
+            "children": [
+              {
+                "type": "#text",
+                "value": "Rasterize only the artwork that cannot be represented safely in DrawingML."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

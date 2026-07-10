@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scene Native PPTX"
+  short_description: "从高精度设计稿生成稳定的原生可编辑PowerPoint文件"
+  default_prompt: "Use $scene-native-pptx to generate a high-fidelity slide design and rebuild it as a native editable PowerPoint."

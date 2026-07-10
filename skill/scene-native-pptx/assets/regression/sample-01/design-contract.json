@@ -1,0 +1,563 @@
+{
+  "schemaVersion": "1.0.0",
+  "metadata": {
+    "name": "Synthetic orchestration control plane",
+    "sourceReference": "reference.png"
+  },
+  "mode": "native-first",
+  "canvas": {
+    "width": 1600,
+    "height": 900,
+    "units": "px"
+  },
+  "regions": [
+    {
+      "id": "region-header",
+      "role": "title-area",
+      "bbox": [
+        50,
+        24,
+        1500,
+        90
+      ],
+      "z": 10
+    },
+    {
+      "id": "region-inputs",
+      "role": "input-cards",
+      "bbox": [
+        50,
+        160,
+        360,
+        520
+      ],
+      "z": 20
+    },
+    {
+      "id": "region-hub",
+      "role": "decision-hub",
+      "bbox": [
+        560,
+        210,
+        460,
+        470
+      ],
+      "z": 30
+    },
+    {
+      "id": "region-outputs",
+      "role": "output-cards",
+      "bbox": [
+        1150,
+        160,
+        400,
+        520
+      ],
+      "z": 20
+    },
+    {
+      "id": "region-metrics",
+      "role": "metric-strip",
+      "bbox": [
+        50,
+        720,
+        1500,
+        145
+      ],
+      "z": 20
+    }
+  ],
+  "texts": [
+    {
+      "id": "title",
+      "text": "Orchestration Control Plane",
+      "role": "label",
+      "bbox": [
+        62,
+        30,
+        760,
+        50
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 38,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "subtitle",
+      "text": "From trusted signals to coordinated service actions",
+      "role": "label",
+      "bbox": [
+        62,
+        76,
+        720,
+        30
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 18,
+        "weight": 500,
+        "color": "#475569"
+      }
+    },
+    {
+      "id": "status",
+      "text": "NATIVE FIRST",
+      "role": "label",
+      "bbox": [
+        1382,
+        48,
+        146,
+        34
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 13,
+        "weight": 700,
+        "color": "#0369A1"
+      }
+    },
+    {
+      "id": "input-number-0",
+      "text": "01",
+      "role": "label",
+      "bbox": [
+        87,
+        204,
+        50,
+        35
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 15,
+        "weight": 700,
+        "color": "#2563EB"
+      }
+    },
+    {
+      "id": "input-title-0",
+      "text": "Live telemetry",
+      "role": "label",
+      "bbox": [
+        157,
+        200,
+        210,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 20,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "input-desc-0",
+      "text": "Health, capacity, context",
+      "role": "label",
+      "bbox": [
+        157,
+        234,
+        210,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "input-number-1",
+      "text": "02",
+      "role": "label",
+      "bbox": [
+        87,
+        380,
+        50,
+        35
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 15,
+        "weight": 700,
+        "color": "#2563EB"
+      }
+    },
+    {
+      "id": "input-title-1",
+      "text": "User request",
+      "role": "label",
+      "bbox": [
+        157,
+        376,
+        210,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 20,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "input-desc-1",
+      "text": "Intent, priority, constraints",
+      "role": "label",
+      "bbox": [
+        157,
+        410,
+        210,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "input-number-2",
+      "text": "03",
+      "role": "label",
+      "bbox": [
+        87,
+        556,
+        50,
+        35
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 15,
+        "weight": 700,
+        "color": "#2563EB"
+      }
+    },
+    {
+      "id": "input-title-2",
+      "text": "Policy signals",
+      "role": "label",
+      "bbox": [
+        157,
+        552,
+        210,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 20,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "input-desc-2",
+      "text": "Consent, risk, availability",
+      "role": "label",
+      "bbox": [
+        157,
+        586,
+        210,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "hub-title",
+      "text": "POLICY ENGINE",
+      "role": "label",
+      "bbox": [
+        690,
+        492,
+        200,
+        28
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 16,
+        "weight": 700,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "hub-desc",
+      "text": "Plan  |  route  |  verify",
+      "role": "label",
+      "bbox": [
+        670,
+        520,
+        240,
+        24
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 13,
+        "weight": 500,
+        "color": "#DBEAFE"
+      }
+    },
+    {
+      "id": "output-title-0",
+      "text": "Route work",
+      "role": "label",
+      "bbox": [
+        1270,
+        200,
+        245,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 20,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "output-desc-0",
+      "text": "Match the best available capability",
+      "role": "label",
+      "bbox": [
+        1270,
+        234,
+        245,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "output-title-1",
+      "text": "Guard action",
+      "role": "label",
+      "bbox": [
+        1270,
+        376,
+        245,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 20,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "output-desc-1",
+      "text": "Apply policy before execution",
+      "role": "label",
+      "bbox": [
+        1270,
+        410,
+        245,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "output-title-2",
+      "text": "Report state",
+      "role": "label",
+      "bbox": [
+        1270,
+        552,
+        245,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 20,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "output-desc-2",
+      "text": "Return outcome and confidence",
+      "role": "label",
+      "bbox": [
+        1270,
+        586,
+        245,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "metric-value-0",
+      "text": "12 ms",
+      "role": "label",
+      "bbox": [
+        90,
+        752,
+        180,
+        38
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 28,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "metric-label-0",
+      "text": "Decision latency",
+      "role": "label",
+      "bbox": [
+        90,
+        795,
+        240,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "metric-value-1",
+      "text": "99.9%",
+      "role": "label",
+      "bbox": [
+        468,
+        752,
+        180,
+        38
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 28,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "metric-label-1",
+      "text": "Trace coverage",
+      "role": "label",
+      "bbox": [
+        468,
+        795,
+        240,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "metric-value-2",
+      "text": "4",
+      "role": "label",
+      "bbox": [
+        846,
+        752,
+        180,
+        38
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 28,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "metric-label-2",
+      "text": "Policy gates",
+      "role": "label",
+      "bbox": [
+        846,
+        795,
+        240,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    },
+    {
+      "id": "metric-value-3",
+      "text": "0",
+      "role": "label",
+      "bbox": [
+        1224,
+        752,
+        180,
+        38
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 28,
+        "weight": 700,
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "metric-label-3",
+      "text": "Raster layers",
+      "role": "label",
+      "bbox": [
+        1224,
+        795,
+        240,
+        26
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#64748B"
+      }
+    }
+  ],
+  "assets": [],
+  "connectors": [
+    {
+      "id": "connector-input-flow",
+      "from": "region-inputs",
+      "to": "region-hub",
+      "routing": "fan-in"
+    },
+    {
+      "id": "connector-output-flow",
+      "from": "region-hub",
+      "to": "region-outputs",
+      "routing": "fan-out"
+    }
+  ]
+}
