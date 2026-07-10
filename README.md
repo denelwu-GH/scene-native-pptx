@@ -1,5 +1,7 @@
 # Scene Native PPTX
 
+[**English**](README.md) | [简体中文](README.zh-CN.md)
+
 Build high-fidelity, editable PowerPoint slides from a visual design target without flattening the whole page into a screenshot.
 
 ![Benchmark comparison](benchmarks/benchmark-comparison.svg)
@@ -34,6 +36,12 @@ Scene Native PPTX uses a deliberately restricted scene model and SVG profile so 
 - ZIP, XML, relationship, duplicate-ID, text, overflow, and visual QA gates.
 - Real Microsoft PowerPoint save/reopen validation as the final compatibility gate.
 - Synthetic two-slide regression suite with no customer or brand assets.
+
+## Modes
+
+- `native-first`: keep text, cards, connectors, icons, diagrams, and decoration as native DrawingML; picture shapes must remain at zero.
+- `hybrid-fidelity`: keep layout and text native while preserving only isolated complex artwork as local PNG/JPEG/WebP assets.
+- `gorden-compat`: use the legacy background, frame, icon, and text layering route only as a fallback for existing bitmap slides.
 
 ## Install
 
