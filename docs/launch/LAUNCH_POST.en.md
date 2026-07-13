@@ -2,9 +2,11 @@
 
 ## Headline
 
-Beautiful in. Editable out. Scene Native PPTX is now public.
+Canva or Gamma made the slide. Can it still survive PowerPoint?
 
 ## Post
+
+Canva, Gamma, and Beautiful.ai are excellent at visual creation and AI-assisted first drafts. But when the approved design must be handed to someone who still needs to revise it in Microsoft PowerPoint, the final mile changes.
 
 Most image-to-PowerPoint workflows force a compromise: preserve the design as a flat image, or rebuild it manually and lose visual fidelity.
 
@@ -19,6 +21,8 @@ The public samples currently verify:
 
 - all-native: 85 shapes, 31 editable text runs, 0 pictures;
 - hybrid-fidelity: 53 shapes, 22 editable text runs, 1 replaceable artwork asset.
+
+It is not a replacement for Canva, Gamma, or Beautiful.ai. It is the native-editable PowerPoint delivery layer after the design is approved.
 
 The project is MIT licensed and built as an installable Codex skill.
 

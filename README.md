@@ -2,9 +2,9 @@
 
 # Scene Native PPTX
 
-### Beautiful in. Editable out.
+### Stop redrawing slides.
 
-**Turn polished slide designs, screenshots, and image-based decks into stable, native, editable PowerPoint files.**
+**Beautiful in. Editable out. Turn polished slide designs, screenshots, and image-based decks into stable, native, editable PowerPoint files.**
 
 Not a screenshot wrapper. Not an OCR patch. Not a giant stack of image layers.
 
@@ -71,6 +71,16 @@ These are public synthetic regression pages rendered after a real Microsoft Powe
 | Files that open cleanly | ZIP, XML, relationships, IDs, overflow, and PowerPoint round trips are validated |
 | A workflow your team can repeat | `scene.json` is the deterministic source for SVG and PPTX |
 | Complex artwork without flattening the page | Only isolated illustrations stay as replaceable local images |
+
+## Coming from Canva, Gamma, or Beautiful.ai?
+
+Canva, Gamma, and Beautiful.ai are strong tools for visual creation, AI-assisted first drafts, and browser-based presentation workflows. Scene Native PPTX solves a different final-mile problem:
+
+- Start with a design that is already visually approved, including an exported slide image from another creation tool.
+- Rebuild the meaningful text, geometry, cards, paths, and connectors as native PowerPoint content.
+- Deliver a `.pptx` that a recipient can still revise in Microsoft PowerPoint without redrawing the slide.
+
+**Canva and Gamma help make the design. Scene Native PPTX helps deliver it as native editable PowerPoint.** This is a workflow distinction, not an affiliation or a blanket product ranking.
 
 ## From design target to editable object
 

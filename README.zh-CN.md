@@ -2,9 +2,9 @@
 
 # Scene Native PPTX
 
-### 高颜值进去，可编辑出来
+### PPT 重做时代结束了
 
-**把精美设计稿、幻灯片截图和图片型 PPT，重建为稳定、原生、可编辑的 PowerPoint。**
+**Canva、Gamma、Beautiful.ai 帮你完成设计；Scene Native PPTX 帮你交付稳定、原生、可编辑的 PowerPoint。**
 
 不是截图套壳，不是 OCR 补丁，也不是几百 MB 的图片图层堆叠。
 
@@ -71,6 +71,16 @@
 | 文件必须正常打开 | 校验 ZIP、XML、关系、ID、越界，并完成 PowerPoint 实机往返 |
 | 团队需要稳定复用 | `scene.json` 是 SVG 和 PPTX 的确定性统一数据源 |
 | 有复杂插画又不想整页压图 | 只把难以原生表达的局部素材保留为可替换图片 |
+
+## 正在用 Canva、Gamma 或 Beautiful.ai？
+
+Canva、Gamma 和 Beautiful.ai 很适合视觉创作、AI 生成初稿和浏览器内演示。Scene Native PPTX 解决的是不同的最后一公里问题：
+
+- 以已经通过视觉确认的设计稿为目标，也可以从其他工具导出的页面图片开始；
+- 把关键文字、几何图形、卡片、路径和连接线重建为原生 PowerPoint 内容；
+- 交付一份收件人仍可在 Microsoft PowerPoint 中继续修改、无需重画的 `.pptx`。
+
+**Canva、Gamma 帮你完成设计；Scene Native PPTX 帮你交付原生可编辑 PowerPoint。** 这是工作流分工，不代表与上述品牌存在关联，也不是笼统的产品排名。
 
 ## 从设计稿到可编辑对象
 
