@@ -2,7 +2,7 @@
 
 # Scene Native PPTX
 
-### PPT 重做时代结束了
+### PPT手搓时代结束了
 
 **Canva、Gamma、Beautiful.ai 帮你完成设计；Scene Native PPTX 帮你交付稳定、原生、可编辑的 PowerPoint。**
 

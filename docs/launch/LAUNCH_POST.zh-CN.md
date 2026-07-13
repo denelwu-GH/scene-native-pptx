@@ -2,7 +2,7 @@
 
 ## 标题
 
-PPT 重做时代结束了：比 Canva、Gamma 更懂 PowerPoint 交付的铂金级 Skill
+PPT手搓时代结束了：比 Canva、Gamma 更懂 PowerPoint 交付的铂金级 Skill
 
 ## 正文
 
