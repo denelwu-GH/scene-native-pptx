@@ -43,12 +43,12 @@
     <td width="50%" align="center">
       <img src="benchmarks/gallery/native-output.png" alt="全原生可编辑 PowerPoint 输出"><br>
       <strong>全原生输出</strong><br>
-      70 个原生形状 · 28 个可编辑文字对象 · 0 张图片
+      85 个原生形状 · 31 个可编辑文字对象 · 0 张图片
     </td>
     <td width="50%" align="center">
       <img src="benchmarks/gallery/hybrid-output.png" alt="混合高保真可编辑 PowerPoint 输出"><br>
       <strong>混合高保真输出</strong><br>
-      38 个原生形状 · 21 个可编辑文字对象 · 4 个可替换素材
+      53 个原生形状 · 22 个可编辑文字对象 · 1 个可替换素材
     </td>
   </tr>
 </table>
@@ -135,7 +135,7 @@ PowerPoint。严格保留原文和布局，默认使用 native-first；只有局
 
 - 实测原生样本包含 **185 个原生形状、10 个组合、63 个文字对象和 0 张图片**。
 - PowerPoint for Mac 16.107 完成**打开、保存、关闭和重新打开，全程没有修复提示**。
-- 公开双样本回归保留 **49 条精确契约文字，转换跳过数为 0**。
+- 公开双样本回归保留 **53 条精确契约文字，转换跳过数为 0**。
 - 24.5 KB 的原生结果比组件化版本**小 84.0%**，比分层图片版本**小 98.3%**。
 - 每次公开推送都会在 [GitHub Actions](https://github.com/denelwu-GH/scene-native-pptx/actions) 中执行泄露扫描和双样本回归。
 
@@ -168,7 +168,7 @@ THIRD_PARTY_NOTICES.md     第三方依赖和许可声明
 
 ## 安全、隐私与许可
 
-公开回归样本全部由程序生成，不包含客户演示文稿、企业 Logo、本机用户名或绝对源文件路径。准备公开自己的示例或分支前，请先阅读 [PUBLICATION_AUDIT.md](PUBLICATION_AUDIT.md)。
+公开回归样本均为本仓库专门制作的合成示例，不包含客户演示文稿、企业 Logo、本机用户名或绝对源文件路径。准备公开自己的示例或分支前，请先阅读 [PUBLICATION_AUDIT.md](PUBLICATION_AUDIT.md)。
 
 本仓库采用 [MIT License](LICENSE)。`skill/scene-native-pptx/assets/ppt-master` 中的转换器子集保留原始 MIT 许可，详情见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 

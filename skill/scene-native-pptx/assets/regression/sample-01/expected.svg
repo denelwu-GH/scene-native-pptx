@@ -2,24 +2,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="0.58" stop-color="#F8FAFC"/>
-      <stop offset="1" stop-color="#EEF6FF"/>
+      <stop offset="0" stop-color="#030712"/>
+      <stop offset="0.55" stop-color="#071A37"/>
+      <stop offset="1" stop-color="#020617"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="0.55" stop-color="#2563EB"/>
-      <stop offset="1" stop-color="#1E3A8A"/>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14284B"/>
+      <stop offset="1" stop-color="#091426"/>
     </linearGradient>
-    <radialGradient id="hub-gradient" cx="35%" cy="28%" r="75%">
-      <stop offset="0" stop-color="#67E8F9"/>
-      <stop offset="0.48" stop-color="#2563EB"/>
-      <stop offset="1" stop-color="#172554"/>
+    <linearGradient id="electric" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#20D9FF"/>
+      <stop offset="0.58" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <radialGradient id="core-gradient" cx="35%" cy="28%" r="78%">
+      <stop offset="0" stop-color="#7DEBFF"/>
+      <stop offset="0.45" stop-color="#147BFF"/>
+      <stop offset="1" stop-color="#0A1C55"/>
     </radialGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="7"/>
-      <feOffset dx="0" dy="5" result="off"/>
-      <feFlood flood-color="#0F3F78" flood-opacity="0.15"/>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="6" result="off"/>
+      <feFlood flood-color="#01040D" flood-opacity="0.65"/>
       <feComposite in2="off" operator="in"/>
       <feMerge>
         <feMergeNode/>
@@ -30,89 +34,107 @@
 
   <g id="background" data-role="background">
     <rect x="0" y="0" width="1600" height="900" fill="url(#bg)"/>
-    <circle cx="790" cy="445" r="270" fill="none" stroke="#BFDBFE" stroke-width="1" stroke-dasharray="8 10"/>
-    <circle cx="790" cy="445" r="210" fill="none" stroke="#DBEAFE" stroke-width="1"/>
+    <circle cx="804" cy="440" r="300" fill="none" stroke="#1C4E86" stroke-width="1" stroke-dasharray="6 16" opacity="0.72"/>
+    <circle cx="804" cy="440" r="242" fill="none" stroke="#164273" stroke-width="1" opacity="0.85"/>
+    <line x1="64" y1="686" x2="1536" y2="686" stroke="#16365E" stroke-width="1"/>
   </g>
 
   <g id="header" data-role="title-area">
-    <text id="shape-title" data-text-id="title" x="62" y="66" font-family="Arial" font-size="38" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">Orchestration Control Plane</text>
-    <text id="shape-subtitle" data-text-id="subtitle" x="62" y="101" font-family="Arial" font-size="18" font-weight="500" fill="#475569" text-anchor="start" letter-spacing="0">From trusted signals to coordinated service actions</text>
-    <rect x="1372" y="46" width="166" height="38" rx="19" fill="#E0F2FE" stroke="#7DD3FC" stroke-width="1"/>
-    <text id="shape-status" data-text-id="status" x="1455" y="71" font-family="Arial" font-size="13" font-weight="700" fill="#0369A1" text-anchor="middle" letter-spacing="0">NATIVE FIRST</text>
+    <text id="shape-title" data-text-id="title" x="64" y="78" font-family="Arial" font-size="42" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">Autonomous Decision Fabric</text>
+    <text id="shape-subtitle" data-text-id="subtitle" x="64" y="112" font-family="Arial" font-size="18" font-weight="500" fill="#94A9C8" text-anchor="start" letter-spacing="0">Signals enter. Decisions coordinate. Outcomes verify.</text>
+    <rect x="1326" y="46" width="210" height="42" rx="21" fill="#0A2547" stroke="#249BFF" stroke-width="1"/>
+    <circle cx="1350" cy="67" r="6" fill="#34D399"/>
+    <text id="shape-status" data-text-id="status" x="1425" y="73" font-family="Arial" font-size="14" font-weight="700" fill="#CDEEFF" text-anchor="middle" letter-spacing="0">ALL NATIVE</text>
   </g>
 
-  <g id="inputs" data-role="input-cards">
-    <rect x="62" y="176" width="330" height="132" rx="14" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.4" filter="url(#shadow)"/>
-    <circle cx="112" cy="224" r="27" fill="#EFF6FF" stroke="#60A5FA" stroke-width="1.5"/>
-    <text id="shape-input-number-0" data-text-id="input-number-0" x="112" y="230" font-family="Arial" font-size="15" font-weight="700" fill="#2563EB" text-anchor="middle" letter-spacing="0">01</text>
-    <text id="shape-input-title-0" data-text-id="input-title-0" x="157" y="224" font-family="Arial" font-size="20" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">Live telemetry</text>
-    <text id="shape-input-desc-0" data-text-id="input-desc-0" x="157" y="254" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="start" letter-spacing="0">Health, capacity, context</text>
-    <line x1="392" y1="242" x2="566" y2="445" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
-    <rect x="62" y="352" width="330" height="132" rx="14" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.4" filter="url(#shadow)"/>
-    <circle cx="112" cy="400" r="27" fill="#EFF6FF" stroke="#60A5FA" stroke-width="1.5"/>
-    <text id="shape-input-number-1" data-text-id="input-number-1" x="112" y="406" font-family="Arial" font-size="15" font-weight="700" fill="#2563EB" text-anchor="middle" letter-spacing="0">02</text>
-    <text id="shape-input-title-1" data-text-id="input-title-1" x="157" y="400" font-family="Arial" font-size="20" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">User request</text>
-    <text id="shape-input-desc-1" data-text-id="input-desc-1" x="157" y="430" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="start" letter-spacing="0">Intent, priority, constraints</text>
-    <line x1="392" y1="418" x2="566" y2="445" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
-    <rect x="62" y="528" width="330" height="132" rx="14" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.4" filter="url(#shadow)"/>
-    <circle cx="112" cy="576" r="27" fill="#EFF6FF" stroke="#60A5FA" stroke-width="1.5"/>
-    <text id="shape-input-number-2" data-text-id="input-number-2" x="112" y="582" font-family="Arial" font-size="15" font-weight="700" fill="#2563EB" text-anchor="middle" letter-spacing="0">03</text>
-    <text id="shape-input-title-2" data-text-id="input-title-2" x="157" y="576" font-family="Arial" font-size="20" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">Policy signals</text>
-    <text id="shape-input-desc-2" data-text-id="input-desc-2" x="157" y="606" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="start" letter-spacing="0">Consent, risk, availability</text>
-    <line x1="392" y1="594" x2="566" y2="445" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+  <g id="connectors" data-role="connector-layer">
+    <path d="M418 260 H548 C590 260 602 440 642 440" fill="none" stroke="#2374DC" stroke-width="3" stroke-linecap="round"/>
+    <path d="M966 440 C1006 440 1018 260 1060 260 H1138" fill="none" stroke="#28C7F7" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="548" cy="260" r="5" fill="#249BFF"/>
+    <circle cx="1060" cy="260" r="5" fill="#32D7F4"/>
+    <path d="M418 402 H548 C590 402 602 440 642 440" fill="none" stroke="#2374DC" stroke-width="3" stroke-linecap="round"/>
+    <path d="M966 440 C1006 440 1018 402 1060 402 H1138" fill="none" stroke="#28C7F7" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="548" cy="402" r="5" fill="#249BFF"/>
+    <circle cx="1060" cy="402" r="5" fill="#32D7F4"/>
+    <path d="M418 544 H548 C590 544 602 440 642 440" fill="none" stroke="#2374DC" stroke-width="3" stroke-linecap="round"/>
+    <path d="M966 440 C1006 440 1018 544 1060 544 H1138" fill="none" stroke="#28C7F7" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="548" cy="544" r="5" fill="#249BFF"/>
+    <circle cx="1060" cy="544" r="5" fill="#32D7F4"/>
   </g>
 
-  <g id="hub" data-role="decision-hub">
-    <circle cx="790" cy="445" r="152" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="2"/>
-    <circle cx="790" cy="445" r="127" fill="none" stroke="#60A5FA" stroke-width="4" stroke-dasharray="14 9"/>
-    <circle cx="790" cy="445" r="102" fill="url(#hub-gradient)" stroke="#22D3EE" stroke-width="5" filter="url(#shadow)"/>
-    <rect x="748" y="395" width="84" height="72" rx="14" fill="none" stroke="#FFFFFF" stroke-width="5"/>
-    <line x1="764" y1="415" x2="816" y2="415" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
-    <line x1="764" y1="433" x2="803" y2="433" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
-    <text id="shape-hub-title" data-text-id="hub-title" x="790" y="515" font-family="Arial" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0">POLICY ENGINE</text>
-    <text id="shape-hub-desc" data-text-id="hub-desc" x="790" y="541" font-family="Arial" font-size="13" font-weight="500" fill="#DBEAFE" text-anchor="middle" letter-spacing="0">Plan  |  route  |  verify</text>
+  <g id="signals" data-role="signal-inputs">
+    <rect x="64" y="214" width="354" height="92" rx="14" fill="url(#panel)" stroke="#285585" stroke-width="1.2" filter="url(#shadow)"/>
+    <circle cx="106" cy="260" r="22" fill="#0A274A" stroke="#25D6FF" stroke-width="1.5"/>
+    <line x1="98" y1="260" x2="114" y2="260" stroke="#25D6FF" stroke-width="3" stroke-linecap="round"/>
+    <line x1="106" y1="252" x2="106" y2="268" stroke="#25D6FF" stroke-width="3" stroke-linecap="round"/>
+    <text id="shape-signal-number-0" data-text-id="signal-number-0" x="146" y="248" font-family="Arial" font-size="13" font-weight="700" fill="#25D6FF" text-anchor="start" letter-spacing="0">01</text>
+    <text id="shape-signal-title-0" data-text-id="signal-title-0" x="146" y="272" font-family="Arial" font-size="19" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">LIVE SIGNALS</text>
+    <text id="shape-signal-desc-0" data-text-id="signal-desc-0" x="146" y="294" font-family="Arial" font-size="14" font-weight="500" fill="#91A8C8" text-anchor="start" letter-spacing="0">Context, capacity, events</text>
+    <rect x="64" y="356" width="354" height="92" rx="14" fill="url(#panel)" stroke="#285585" stroke-width="1.2" filter="url(#shadow)"/>
+    <circle cx="106" cy="402" r="22" fill="#0A274A" stroke="#7AA2FF" stroke-width="1.5"/>
+    <line x1="98" y1="402" x2="114" y2="402" stroke="#7AA2FF" stroke-width="3" stroke-linecap="round"/>
+    <line x1="106" y1="394" x2="106" y2="410" stroke="#7AA2FF" stroke-width="3" stroke-linecap="round"/>
+    <text id="shape-signal-number-1" data-text-id="signal-number-1" x="146" y="390" font-family="Arial" font-size="13" font-weight="700" fill="#7AA2FF" text-anchor="start" letter-spacing="0">02</text>
+    <text id="shape-signal-title-1" data-text-id="signal-title-1" x="146" y="414" font-family="Arial" font-size="19" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">INTENT MODEL</text>
+    <text id="shape-signal-desc-1" data-text-id="signal-desc-1" x="146" y="436" font-family="Arial" font-size="14" font-weight="500" fill="#91A8C8" text-anchor="start" letter-spacing="0">Priority, constraints, goals</text>
+    <rect x="64" y="498" width="354" height="92" rx="14" fill="url(#panel)" stroke="#285585" stroke-width="1.2" filter="url(#shadow)"/>
+    <circle cx="106" cy="544" r="22" fill="#0A274A" stroke="#7CDBB5" stroke-width="1.5"/>
+    <line x1="98" y1="544" x2="114" y2="544" stroke="#7CDBB5" stroke-width="3" stroke-linecap="round"/>
+    <line x1="106" y1="536" x2="106" y2="552" stroke="#7CDBB5" stroke-width="3" stroke-linecap="round"/>
+    <text id="shape-signal-number-2" data-text-id="signal-number-2" x="146" y="532" font-family="Arial" font-size="13" font-weight="700" fill="#7CDBB5" text-anchor="start" letter-spacing="0">03</text>
+    <text id="shape-signal-title-2" data-text-id="signal-title-2" x="146" y="556" font-family="Arial" font-size="19" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">POLICY</text>
+    <text id="shape-signal-desc-2" data-text-id="signal-desc-2" x="146" y="578" font-family="Arial" font-size="14" font-weight="500" fill="#91A8C8" text-anchor="start" letter-spacing="0">Consent, risk, control</text>
   </g>
 
-  <g id="outputs" data-role="output-cards">
-    <line x1="1014" y1="445" x2="1168" y2="242" stroke="#22D3EE" stroke-width="4" stroke-linecap="round"/>
-    <circle cx="1168" cy="242" r="7" fill="#22D3EE"/>
-    <rect x="1176" y="176" width="362" height="132" rx="14" fill="#FFFFFF" stroke="#A5F3FC" stroke-width="1.4" filter="url(#shadow)"/>
-    <circle cx="1226" cy="224" r="27" fill="#ECFEFF" stroke="#2DD4BF" stroke-width="1.5"/>
-    <path d="M1213 224 L1222 233 L1240 214" fill="none" stroke="#0F766E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text id="shape-output-title-0" data-text-id="output-title-0" x="1270" y="224" font-family="Arial" font-size="20" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">Route work</text>
-    <text id="shape-output-desc-0" data-text-id="output-desc-0" x="1270" y="254" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="start" letter-spacing="0">Match the best available capability</text>
-    <line x1="1014" y1="445" x2="1168" y2="418" stroke="#22D3EE" stroke-width="4" stroke-linecap="round"/>
-    <circle cx="1168" cy="418" r="7" fill="#22D3EE"/>
-    <rect x="1176" y="352" width="362" height="132" rx="14" fill="#FFFFFF" stroke="#A5F3FC" stroke-width="1.4" filter="url(#shadow)"/>
-    <circle cx="1226" cy="400" r="27" fill="#ECFEFF" stroke="#2DD4BF" stroke-width="1.5"/>
-    <path d="M1213 400 L1222 409 L1240 390" fill="none" stroke="#0F766E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text id="shape-output-title-1" data-text-id="output-title-1" x="1270" y="400" font-family="Arial" font-size="20" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">Guard action</text>
-    <text id="shape-output-desc-1" data-text-id="output-desc-1" x="1270" y="430" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="start" letter-spacing="0">Apply policy before execution</text>
-    <line x1="1014" y1="445" x2="1168" y2="594" stroke="#22D3EE" stroke-width="4" stroke-linecap="round"/>
-    <circle cx="1168" cy="594" r="7" fill="#22D3EE"/>
-    <rect x="1176" y="528" width="362" height="132" rx="14" fill="#FFFFFF" stroke="#A5F3FC" stroke-width="1.4" filter="url(#shadow)"/>
-    <circle cx="1226" cy="576" r="27" fill="#ECFEFF" stroke="#2DD4BF" stroke-width="1.5"/>
-    <path d="M1213 576 L1222 585 L1240 566" fill="none" stroke="#0F766E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text id="shape-output-title-2" data-text-id="output-title-2" x="1270" y="576" font-family="Arial" font-size="20" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">Report state</text>
-    <text id="shape-output-desc-2" data-text-id="output-desc-2" x="1270" y="606" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="start" letter-spacing="0">Return outcome and confidence</text>
+  <g id="core" data-role="decision-core">
+    <circle cx="804" cy="440" r="168" fill="#071A37" stroke="#214F84" stroke-width="2"/>
+    <circle cx="804" cy="440" r="145" fill="none" stroke="#2F83DE" stroke-width="6" stroke-dasharray="18 12"/>
+    <circle cx="804" cy="440" r="118" fill="url(#core-gradient)" stroke="#4EE7FF" stroke-width="3" filter="url(#shadow)"/>
+    <polygon points="804,334 875,382 804,430 733,382" fill="none" stroke="#E4F7FF" stroke-width="4" stroke-linejoin="round"/>
+    <polygon points="804,366 875,414 804,462 733,414" fill="none" stroke="#8FCEFF" stroke-width="4" stroke-linejoin="round"/>
+    <polygon points="804,398 875,446 804,494 733,446" fill="none" stroke="#54DCFF" stroke-width="4" stroke-linejoin="round"/>
+    <text id="shape-core-label" data-text-id="core-label" x="804" y="530" font-family="Arial" font-size="15" font-weight="700" fill="#EAF7FF" text-anchor="middle" letter-spacing="0">DECISION CORE</text>
+    <text id="shape-core-desc" data-text-id="core-desc" x="804" y="554" font-family="Arial" font-size="13" font-weight="500" fill="#A6C2E4" text-anchor="middle" letter-spacing="0">interpret  ·  coordinate  ·  verify</text>
+  </g>
+
+  <g id="outcomes" data-role="verified-outcomes">
+    <rect x="1138" y="214" width="398" height="92" rx="14" fill="url(#panel)" stroke="#285585" stroke-width="1.2" filter="url(#shadow)"/>
+    <rect x="1160" y="237" width="44" height="44" rx="10" fill="#0A274A" stroke="#28C7F7" stroke-width="1.3"/>
+    <path d="M1172 260 L1182 270 L1195 250" fill="none" stroke="#28C7F7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="shape-outcome-number-0" data-text-id="outcome-number-0" x="1225" y="248" font-family="Arial" font-size="13" font-weight="700" fill="#28C7F7" text-anchor="start" letter-spacing="0">01</text>
+    <text id="shape-outcome-title-0" data-text-id="outcome-title-0" x="1225" y="272" font-family="Arial" font-size="18" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">ROUTE THE WORK</text>
+    <text id="shape-outcome-desc-0" data-text-id="outcome-desc-0" x="1225" y="294" font-family="Arial" font-size="14" font-weight="500" fill="#91A8C8" text-anchor="start" letter-spacing="0">Best-fit capability selected</text>
+    <rect x="1138" y="356" width="398" height="92" rx="14" fill="url(#panel)" stroke="#285585" stroke-width="1.2" filter="url(#shadow)"/>
+    <rect x="1160" y="379" width="44" height="44" rx="10" fill="#0A274A" stroke="#7AA2FF" stroke-width="1.3"/>
+    <path d="M1172 402 L1182 412 L1195 392" fill="none" stroke="#7AA2FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="shape-outcome-number-1" data-text-id="outcome-number-1" x="1225" y="390" font-family="Arial" font-size="13" font-weight="700" fill="#7AA2FF" text-anchor="start" letter-spacing="0">02</text>
+    <text id="shape-outcome-title-1" data-text-id="outcome-title-1" x="1225" y="414" font-family="Arial" font-size="18" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">Govern</text>
+    <text id="shape-outcome-desc-1" data-text-id="outcome-desc-1" x="1225" y="436" font-family="Arial" font-size="14" font-weight="500" fill="#91A8C8" text-anchor="start" letter-spacing="0">Policy applied before execution</text>
+    <rect x="1138" y="498" width="398" height="92" rx="14" fill="url(#panel)" stroke="#285585" stroke-width="1.2" filter="url(#shadow)"/>
+    <rect x="1160" y="521" width="44" height="44" rx="10" fill="#0A274A" stroke="#7CDBB5" stroke-width="1.3"/>
+    <path d="M1172 544 L1182 554 L1195 534" fill="none" stroke="#7CDBB5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="shape-outcome-number-2" data-text-id="outcome-number-2" x="1225" y="532" font-family="Arial" font-size="13" font-weight="700" fill="#7CDBB5" text-anchor="start" letter-spacing="0">03</text>
+    <text id="shape-outcome-title-2" data-text-id="outcome-title-2" x="1225" y="556" font-family="Arial" font-size="18" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">VERIFY</text>
+    <text id="shape-outcome-desc-2" data-text-id="outcome-desc-2" x="1225" y="578" font-family="Arial" font-size="14" font-weight="500" fill="#91A8C8" text-anchor="start" letter-spacing="0">Outcome and trace delivered</text>
   </g>
 
   <g id="metrics" data-role="metric-strip">
-    <rect x="62" y="738" width="344" height="112" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
-    <rect x="62" y="738" width="8" height="112" rx="4" fill="#2563EB"/>
-    <text id="shape-metric-value-0" data-text-id="metric-value-0" x="90" y="785" font-family="Arial" font-size="28" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">12 ms</text>
-    <text id="shape-metric-label-0" data-text-id="metric-label-0" x="90" y="817" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="start" letter-spacing="0">Decision latency</text>
-    <rect x="440" y="738" width="344" height="112" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
-    <rect x="440" y="738" width="8" height="112" rx="4" fill="#2563EB"/>
-    <text id="shape-metric-value-1" data-text-id="metric-value-1" x="468" y="785" font-family="Arial" font-size="28" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">99.9%</text>
-    <text id="shape-metric-label-1" data-text-id="metric-label-1" x="468" y="817" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="start" letter-spacing="0">Trace coverage</text>
-    <rect x="818" y="738" width="344" height="112" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
-    <rect x="818" y="738" width="8" height="112" rx="4" fill="#2563EB"/>
-    <text id="shape-metric-value-2" data-text-id="metric-value-2" x="846" y="785" font-family="Arial" font-size="28" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">4</text>
-    <text id="shape-metric-label-2" data-text-id="metric-label-2" x="846" y="817" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="start" letter-spacing="0">Policy gates</text>
-    <rect x="1196" y="738" width="344" height="112" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
-    <rect x="1196" y="738" width="8" height="112" rx="4" fill="#0F766E"/>
-    <text id="shape-metric-value-3" data-text-id="metric-value-3" x="1224" y="785" font-family="Arial" font-size="28" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">0</text>
-    <text id="shape-metric-label-3" data-text-id="metric-label-3" x="1224" y="817" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="start" letter-spacing="0">Raster layers</text>
+    <rect x="64" y="736" width="1472" height="104" rx="14" fill="#071426" stroke="#234C7B" stroke-width="1.2"/>
+    <rect x="64" y="736" width="6" height="104" rx="3" fill="url(#electric)"/>
+    <circle cx="116" cy="788" r="20" fill="#0C3159" stroke="#2ED9FF" stroke-width="1.2"/>
+    <circle cx="116" cy="788" r="6" fill="#2ED9FF"/>
+    <text id="shape-metric-value-0" data-text-id="metric-value-0" x="150" y="782" font-family="Arial" font-size="24" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">12 ms</text>
+    <text id="shape-metric-label-0" data-text-id="metric-label-0" x="150" y="810" font-family="Arial" font-size="14" font-weight="500" fill="#8EA6C8" text-anchor="start" letter-spacing="0">decision latency</text>
+    <circle cx="410" cy="788" r="20" fill="#0C3159" stroke="#2ED9FF" stroke-width="1.2"/>
+    <circle cx="410" cy="788" r="6" fill="#2ED9FF"/>
+    <text id="shape-metric-value-1" data-text-id="metric-value-1" x="444" y="782" font-family="Arial" font-size="24" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">99.9%</text>
+    <text id="shape-metric-label-1" data-text-id="metric-label-1" x="444" y="810" font-family="Arial" font-size="14" font-weight="500" fill="#8EA6C8" text-anchor="start" letter-spacing="0">trace coverage</text>
+    <circle cx="704" cy="788" r="20" fill="#0C3159" stroke="#2ED9FF" stroke-width="1.2"/>
+    <circle cx="704" cy="788" r="6" fill="#2ED9FF"/>
+    <text id="shape-metric-value-2" data-text-id="metric-value-2" x="738" y="782" font-family="Arial" font-size="24" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">0</text>
+    <text id="shape-metric-label-2" data-text-id="metric-label-2" x="738" y="810" font-family="Arial" font-size="14" font-weight="500" fill="#8EA6C8" text-anchor="start" letter-spacing="0">raster layers</text>
+    <line x1="1032" y1="756" x2="1032" y2="820" stroke="#234C7B" stroke-width="1"/>
+    <text id="shape-footer-label" data-text-id="footer-label" x="1070" y="777" font-family="Arial" font-size="16" font-weight="700" fill="#7EB7FF" text-anchor="start" letter-spacing="0">EDIT THE LOGIC,</text>
+    <text id="shape-footer-emphasis" data-text-id="footer-emphasis" x="1070" y="808" font-family="Arial" font-size="23" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">NOT THE PIXELS.</text>
   </g>
 </svg>

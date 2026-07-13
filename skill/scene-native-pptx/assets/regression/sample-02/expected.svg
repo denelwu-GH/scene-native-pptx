@@ -2,24 +2,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="0.58" stop-color="#F8FAFC"/>
-      <stop offset="1" stop-color="#EEF6FF"/>
+      <stop offset="0" stop-color="#030712"/>
+      <stop offset="0.55" stop-color="#071A37"/>
+      <stop offset="1" stop-color="#020617"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="0.55" stop-color="#2563EB"/>
-      <stop offset="1" stop-color="#1E3A8A"/>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14284B"/>
+      <stop offset="1" stop-color="#091426"/>
     </linearGradient>
-    <radialGradient id="hub-gradient" cx="35%" cy="28%" r="75%">
-      <stop offset="0" stop-color="#67E8F9"/>
-      <stop offset="0.48" stop-color="#2563EB"/>
-      <stop offset="1" stop-color="#172554"/>
+    <linearGradient id="electric" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#20D9FF"/>
+      <stop offset="0.58" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <radialGradient id="core-gradient" cx="35%" cy="28%" r="78%">
+      <stop offset="0" stop-color="#7DEBFF"/>
+      <stop offset="0.45" stop-color="#147BFF"/>
+      <stop offset="1" stop-color="#0A1C55"/>
     </radialGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="7"/>
-      <feOffset dx="0" dy="5" result="off"/>
-      <feFlood flood-color="#0F3F78" flood-opacity="0.15"/>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="6" result="off"/>
+      <feFlood flood-color="#01040D" flood-opacity="0.65"/>
       <feComposite in2="off" operator="in"/>
       <feMerge>
         <feMergeNode/>
@@ -30,59 +34,70 @@
 
   <g id="background" data-role="background">
     <rect x="0" y="0" width="1600" height="900" fill="url(#bg)"/>
+    <circle cx="292" cy="414" r="350" fill="none" stroke="#163C69" stroke-width="1" stroke-dasharray="6 16" opacity="0.7"/>
+    <line x1="64" y1="686" x2="1536" y2="686" stroke="#16365E" stroke-width="1"/>
   </g>
 
   <g id="header" data-role="title-area">
-    <text id="shape-title" data-text-id="title" x="62" y="66" font-family="Arial" font-size="38" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">Media-Rich Service Journey</text>
-    <text id="shape-subtitle" data-text-id="subtitle" x="62" y="101" font-family="Arial" font-size="18" font-weight="500" fill="#475569" text-anchor="start" letter-spacing="0">Native layout with isolated, replaceable artwork</text>
-    <rect x="1360" y="46" width="178" height="38" rx="19" fill="#CCFBF1" stroke="#5EEAD4" stroke-width="1"/>
-    <text id="shape-status" data-text-id="status" x="1449" y="71" font-family="Arial" font-size="13" font-weight="700" fill="#0F766E" text-anchor="middle" letter-spacing="0">HYBRID MODE</text>
+    <text id="shape-title" data-text-id="title" x="64" y="78" font-family="Arial" font-size="42" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">Hybrid Intelligence Studio</text>
+    <text id="shape-subtitle" data-text-id="subtitle" x="64" y="112" font-family="Arial" font-size="18" font-weight="500" fill="#94A9C8" text-anchor="start" letter-spacing="0">Native structure with one isolated, replaceable visual asset.</text>
+    <rect x="1290" y="46" width="246" height="42" rx="21" fill="#13243F" stroke="#8B5CF6" stroke-width="1"/>
+    <circle cx="1314" cy="67" r="6" fill="#C084FC"/>
+    <text id="shape-status" data-text-id="status" x="1412" y="73" font-family="Arial" font-size="14" font-weight="700" fill="#EEE3FF" text-anchor="middle" letter-spacing="0">HYBRID FIDELITY</text>
   </g>
 
-  <g id="journey" data-role="service-stages">
-    <rect x="62" y="170" width="344" height="258" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" filter="url(#shadow)"/>
-    <image id="art-0" href="assets/map.png" x="152" y="194" width="164" height="164"/>
-    <text id="shape-stage-title-0" data-text-id="stage-title-0" x="234" y="380" font-family="Arial" font-size="22" font-weight="700" fill="#0F172A" text-anchor="middle" letter-spacing="0">Discover</text>
-    <text id="shape-stage-desc-0" data-text-id="stage-desc-0" x="234" y="406" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="middle" letter-spacing="0">Understand the request</text>
-    <line x1="406" y1="298" x2="440" y2="298" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
-    <polygon points="432,288 444,298 432,308" fill="#38BDF8"/>
-    <rect x="440" y="170" width="344" height="258" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" filter="url(#shadow)"/>
-    <image id="art-1" href="assets/media.png" x="530" y="194" width="164" height="164"/>
-    <text id="shape-stage-title-1" data-text-id="stage-title-1" x="612" y="380" font-family="Arial" font-size="22" font-weight="700" fill="#0F172A" text-anchor="middle" letter-spacing="0">Compose</text>
-    <text id="shape-stage-desc-1" data-text-id="stage-desc-1" x="612" y="406" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="middle" letter-spacing="0">Assemble the response</text>
-    <line x1="784" y1="298" x2="818" y2="298" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
-    <polygon points="810,288 822,298 810,308" fill="#38BDF8"/>
-    <rect x="818" y="170" width="344" height="258" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" filter="url(#shadow)"/>
-    <image id="art-2" href="assets/shield.png" x="908" y="194" width="164" height="164"/>
-    <text id="shape-stage-title-2" data-text-id="stage-title-2" x="990" y="380" font-family="Arial" font-size="22" font-weight="700" fill="#0F172A" text-anchor="middle" letter-spacing="0">Protect</text>
-    <text id="shape-stage-desc-2" data-text-id="stage-desc-2" x="990" y="406" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="middle" letter-spacing="0">Apply policy checks</text>
-    <line x1="1162" y1="298" x2="1196" y2="298" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
-    <polygon points="1188,288 1200,298 1188,308" fill="#38BDF8"/>
-    <rect x="1196" y="170" width="344" height="258" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" filter="url(#shadow)"/>
-    <image id="art-3" href="assets/chart.png" x="1286" y="194" width="164" height="164"/>
-    <text id="shape-stage-title-3" data-text-id="stage-title-3" x="1368" y="380" font-family="Arial" font-size="22" font-weight="700" fill="#0F172A" text-anchor="middle" letter-spacing="0">Measure</text>
-    <text id="shape-stage-desc-3" data-text-id="stage-desc-3" x="1368" y="406" font-family="Arial" font-size="14" font-weight="500" fill="#64748B" text-anchor="middle" letter-spacing="0">Capture the outcome</text>
+  <g id="artwork" data-role="isolated-artwork">
+    <rect x="64" y="184" width="706" height="420" rx="22" fill="#051226" stroke="#2A5B91" stroke-width="1.4" filter="url(#shadow)"/>
+    <rect x="82" y="202" width="670" height="340" rx="16" fill="#020814" stroke="#245B9B" stroke-width="1"/>
+    <image id="orchestration-artwork" href="assets/orchestration-artwork.png" x="82" y="202" width="670" height="340"/>
+    <rect x="104" y="558" width="164" height="28" rx="14" fill="#102F57" stroke="#2ED9FF" stroke-width="1"/>
+    <circle cx="122" cy="572" r="5" fill="#34D399"/>
+    <text id="shape-asset-label" data-text-id="asset-label" x="190" y="577" font-family="Arial" font-size="12" font-weight="700" fill="#D7F4FF" text-anchor="middle" letter-spacing="0">ISOLATED ARTWORK</text>
+    <text id="shape-asset-note" data-text-id="asset-note" x="738" y="577" font-family="Arial" font-size="13" font-weight="500" fill="#91A8C8" text-anchor="end" letter-spacing="0">1 local PNG · swap without touching layout</text>
   </g>
 
-  <g id="explanation" data-role="hybrid-policy">
-    <rect x="62" y="476" width="1476" height="252" rx="16" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.4" filter="url(#shadow)"/>
-    <rect x="62" y="476" width="12" height="252" rx="6" fill="url(#accent)"/>
-    <text id="shape-panel-title" data-text-id="panel-title" x="104" y="523" font-family="Arial" font-size="26" font-weight="700" fill="#0F172A" text-anchor="start" letter-spacing="0">The semantic layout stays editable</text>
-    <text id="shape-panel-body" data-text-id="panel-body" x="104" y="558" font-family="Arial" font-size="16" font-weight="500" fill="#475569" text-anchor="start" letter-spacing="0">Artwork is isolated into four local image objects; titles, cards, arrows, metrics, and callouts remain native PowerPoint content.</text>
-    <rect x="104" y="606" width="372" height="88" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-    <text id="shape-metric-value-0" data-text-id="metric-value-0" x="128" y="646" font-family="Arial" font-size="26" font-weight="700" fill="#2563EB" text-anchor="start" letter-spacing="0">4</text>
-    <text id="shape-metric-label-0" data-text-id="metric-label-0" x="228" y="646" font-family="Arial" font-size="15" font-weight="500" fill="#475569" text-anchor="start" letter-spacing="0">replaceable assets</text>
-    <rect x="524" y="606" width="372" height="88" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-    <text id="shape-metric-value-1" data-text-id="metric-value-1" x="548" y="646" font-family="Arial" font-size="26" font-weight="700" fill="#2563EB" text-anchor="start" letter-spacing="0">100%</text>
-    <text id="shape-metric-label-1" data-text-id="metric-label-1" x="648" y="646" font-family="Arial" font-size="15" font-weight="500" fill="#475569" text-anchor="start" letter-spacing="0">editable text</text>
-    <rect x="944" y="606" width="372" height="88" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-    <text id="shape-metric-value-2" data-text-id="metric-value-2" x="968" y="646" font-family="Arial" font-size="26" font-weight="700" fill="#0F766E" text-anchor="start" letter-spacing="0">0</text>
-    <text id="shape-metric-label-2" data-text-id="metric-label-2" x="1068" y="646" font-family="Arial" font-size="15" font-weight="500" fill="#475569" text-anchor="start" letter-spacing="0">remote URLs</text>
+  <g id="flow" data-role="hybrid-flow">
+    <path d="M846 252 H890 V536 H846" fill="none" stroke="#347CC4" stroke-width="2" stroke-linecap="round"/>
+    <rect x="914" y="198" width="622" height="108" rx="16" fill="url(#panel)" stroke="#2A5586" stroke-width="1.2" filter="url(#shadow)"/>
+    <rect x="938" y="222" width="56" height="56" rx="14" fill="#0B274A" stroke="#2ED9FF" stroke-width="1.4"/>
+    <circle cx="966" cy="250" r="12" fill="none" stroke="#2ED9FF" stroke-width="3"/>
+    <line x1="954" y1="250" x2="978" y2="250" stroke="#2ED9FF" stroke-width="2.5" stroke-linecap="round"/>
+    <text id="shape-stage-number-0" data-text-id="stage-number-0" x="1024" y="237" font-family="Arial" font-size="13" font-weight="700" fill="#2ED9FF" text-anchor="start" letter-spacing="0">01</text>
+    <text id="shape-stage-title-0" data-text-id="stage-title-0" x="1024" y="262" font-family="Arial" font-size="16" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">Frame</text>
+    <text id="shape-stage-desc-0" data-text-id="stage-desc-0" x="1164" y="264" font-family="Arial" font-size="15" font-weight="500" fill="#A2B7D5" text-anchor="start" letter-spacing="0">Cards, connectors, text</text>
+    <rect x="914" y="330" width="622" height="108" rx="16" fill="url(#panel)" stroke="#2A5586" stroke-width="1.2" filter="url(#shadow)"/>
+    <rect x="938" y="354" width="56" height="56" rx="14" fill="#0B274A" stroke="#A78BFA" stroke-width="1.4"/>
+    <circle cx="966" cy="382" r="12" fill="none" stroke="#A78BFA" stroke-width="3"/>
+    <line x1="954" y1="382" x2="978" y2="382" stroke="#A78BFA" stroke-width="2.5" stroke-linecap="round"/>
+    <text id="shape-stage-number-1" data-text-id="stage-number-1" x="1024" y="369" font-family="Arial" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="0">02</text>
+    <text id="shape-stage-title-1" data-text-id="stage-title-1" x="1024" y="394" font-family="Arial" font-size="16" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">Isolate</text>
+    <text id="shape-stage-desc-1" data-text-id="stage-desc-1" x="1164" y="396" font-family="Arial" font-size="15" font-weight="500" fill="#A2B7D5" text-anchor="start" letter-spacing="0">Artwork is local and replaceable</text>
+    <rect x="914" y="462" width="622" height="108" rx="16" fill="url(#panel)" stroke="#2A5586" stroke-width="1.2" filter="url(#shadow)"/>
+    <rect x="938" y="486" width="56" height="56" rx="14" fill="#0B274A" stroke="#7CDBB5" stroke-width="1.4"/>
+    <circle cx="966" cy="514" r="12" fill="none" stroke="#7CDBB5" stroke-width="3"/>
+    <line x1="954" y1="514" x2="978" y2="514" stroke="#7CDBB5" stroke-width="2.5" stroke-linecap="round"/>
+    <text id="shape-stage-number-2" data-text-id="stage-number-2" x="1024" y="501" font-family="Arial" font-size="13" font-weight="700" fill="#7CDBB5" text-anchor="start" letter-spacing="0">03</text>
+    <text id="shape-stage-title-2" data-text-id="stage-title-2" x="1024" y="526" font-family="Arial" font-size="16" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">Deliver</text>
+    <text id="shape-stage-desc-2" data-text-id="stage-desc-2" x="1164" y="528" font-family="Arial" font-size="15" font-weight="500" fill="#A2B7D5" text-anchor="start" letter-spacing="0">Open, edit, present</text>
   </g>
 
-  <g id="footer" data-role="takeaway">
-    <rect x="62" y="770" width="1476" height="80" rx="12" fill="#0F172A"/>
-    <text id="shape-footer-title" data-text-id="footer-title" x="104" y="807" font-family="Arial" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="start" letter-spacing="0">Hybrid fidelity rule</text>
-    <text id="shape-footer-body" data-text-id="footer-body" x="310" y="807" font-family="Arial" font-size="16" font-weight="500" fill="#CBD5E1" text-anchor="start" letter-spacing="0">Rasterize only the artwork that cannot be represented safely in DrawingML.</text>
+  <g id="metrics" data-role="hybrid-metrics">
+    <rect x="64" y="736" width="1472" height="104" rx="14" fill="#071426" stroke="#234C7B" stroke-width="1.2"/>
+    <rect x="64" y="736" width="6" height="104" rx="3" fill="#8B5CF6"/>
+    <circle cx="116" cy="788" r="20" fill="#19254B" stroke="#A78BFA" stroke-width="1.2"/>
+    <circle cx="116" cy="788" r="6" fill="#C4B5FD"/>
+    <text id="shape-metric-value-0" data-text-id="metric-value-0" x="150" y="782" font-family="Arial" font-size="24" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">1</text>
+    <text id="shape-metric-label-0" data-text-id="metric-label-0" x="150" y="810" font-family="Arial" font-size="14" font-weight="500" fill="#8EA6C8" text-anchor="start" letter-spacing="0">replaceable artwork</text>
+    <circle cx="431" cy="788" r="20" fill="#19254B" stroke="#2ED9FF" stroke-width="1.2"/>
+    <circle cx="431" cy="788" r="6" fill="#2ED9FF"/>
+    <text id="shape-metric-value-1" data-text-id="metric-value-1" x="465" y="782" font-family="Arial" font-size="24" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">100%</text>
+    <text id="shape-metric-label-1" data-text-id="metric-label-1" x="465" y="810" font-family="Arial" font-size="14" font-weight="500" fill="#8EA6C8" text-anchor="start" letter-spacing="0">editable text</text>
+    <circle cx="746" cy="788" r="20" fill="#19254B" stroke="#2ED9FF" stroke-width="1.2"/>
+    <circle cx="746" cy="788" r="6" fill="#2ED9FF"/>
+    <text id="shape-metric-value-2" data-text-id="metric-value-2" x="780" y="782" font-family="Arial" font-size="24" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">0</text>
+    <text id="shape-metric-label-2" data-text-id="metric-label-2" x="780" y="810" font-family="Arial" font-size="14" font-weight="500" fill="#8EA6C8" text-anchor="start" letter-spacing="0">full-slide bitmaps</text>
+    <line x1="1074" y1="756" x2="1074" y2="820" stroke="#234C7B" stroke-width="1"/>
+    <text id="shape-footer-label" data-text-id="footer-label" x="1112" y="777" font-family="Arial" font-size="16" font-weight="700" fill="#C4B5FD" text-anchor="start" letter-spacing="0">KEEP THE ART.</text>
+    <text id="shape-footer-emphasis" data-text-id="footer-emphasis" x="1112" y="808" font-family="Arial" font-size="21" font-weight="700" fill="#F7FBFF" text-anchor="start" letter-spacing="0">EDIT EVERYTHING ELSE.</text>
   </g>
 </svg>

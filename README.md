@@ -43,12 +43,12 @@ Most image-to-PPT workflows force a compromise:
     <td width="50%" align="center">
       <img src="benchmarks/gallery/native-output.png" alt="All-native editable PowerPoint output"><br>
       <strong>All-native output</strong><br>
-      70 native shapes · 28 editable text runs · 0 pictures
+      85 native shapes · 31 editable text runs · 0 pictures
     </td>
     <td width="50%" align="center">
       <img src="benchmarks/gallery/hybrid-output.png" alt="Hybrid-fidelity editable PowerPoint output"><br>
       <strong>Hybrid-fidelity output</strong><br>
-      38 native shapes · 21 editable text runs · 4 replaceable assets
+      53 native shapes · 22 editable text runs · 1 replaceable artwork
     </td>
   </tr>
 </table>
@@ -137,7 +137,7 @@ The score is an engineering benchmark for the same complex-slide use case, not a
 
 - A measured native sample produced **185 native shapes, 10 groups, 63 text runs, and 0 pictures**.
 - PowerPoint for Mac 16.107 completed **open, save, close, and reopen with no repair prompt**.
-- The public two-slide regression preserves **49 exact contract texts with zero skipped conversion groups**.
+- The public two-slide regression preserves **53 exact contract texts with zero skipped conversion groups**.
 - The 24.5 KB native result was **84.0% smaller** than the componentized version and **98.3% smaller** than the layered-image version.
 - Every public push runs secret/path scanning and the two-sample regression in [GitHub Actions](https://github.com/denelwu-GH/scene-native-pptx/actions).
 
@@ -170,7 +170,7 @@ THIRD_PARTY_NOTICES.md     bundled dependency attribution
 
 ## Security, privacy, and license
 
-The public fixtures are generated from code and contain no customer decks, logos, local usernames, or absolute source paths. Read [PUBLICATION_AUDIT.md](PUBLICATION_AUDIT.md) before publishing a fork with your own examples.
+The public fixtures are synthetic examples created for this repository and contain no customer decks, logos, local usernames, or absolute source paths. Read [PUBLICATION_AUDIT.md](PUBLICATION_AUDIT.md) before publishing a fork with your own examples.
 
 The repository is released under the [MIT License](LICENSE). The converter subset under `skill/scene-native-pptx/assets/ppt-master` retains its original MIT notice; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 

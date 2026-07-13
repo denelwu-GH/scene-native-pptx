@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "metadata": {
-    "name": "Synthetic hybrid service journey",
+    "name": "Hybrid intelligence studio",
     "sourceReference": "reference.png"
   },
   "mode": "hybrid-fidelity",
@@ -12,46 +12,46 @@
   },
   "regions": [
     {
-      "id": "region-header",
+      "id": "header",
       "role": "title-area",
       "bbox": [
-        50,
-        24,
-        1500,
+        64,
+        36,
+        1472,
         90
       ],
       "z": 10
     },
     {
-      "id": "region-journey",
-      "role": "service-stages",
+      "id": "artwork",
+      "role": "isolated-artwork",
       "bbox": [
-        50,
-        150,
-        1500,
-        300
+        64,
+        184,
+        706,
+        420
       ],
       "z": 20
     },
     {
-      "id": "region-policy",
-      "role": "hybrid-policy",
+      "id": "flow",
+      "role": "hybrid-flow",
       "bbox": [
-        50,
-        460,
-        1500,
-        290
+        846,
+        198,
+        690,
+        374
       ],
       "z": 20
     },
     {
-      "id": "region-footer",
-      "role": "takeaway",
+      "id": "metrics",
+      "role": "hybrid-metrics",
       "bbox": [
-        50,
-        755,
-        1500,
-        110
+        64,
+        736,
+        1472,
+        104
       ],
       "z": 20
     }
@@ -59,223 +59,274 @@
   "texts": [
     {
       "id": "title",
-      "text": "Media-Rich Service Journey",
+      "text": "Hybrid Intelligence Studio",
       "role": "label",
       "bbox": [
-        62,
-        30,
-        760,
-        50
+        64,
+        34,
+        700,
+        56
       ],
       "font": {
         "family": "Arial",
-        "size": 38,
+        "size": 42,
         "weight": 700,
-        "color": "#0F172A"
+        "color": "#F7FBFF"
       }
     },
     {
       "id": "subtitle",
-      "text": "Native layout with isolated, replaceable artwork",
+      "text": "Native structure with one isolated, replaceable visual asset.",
       "role": "label",
       "bbox": [
-        62,
-        76,
-        720,
+        64,
+        92,
+        780,
         30
       ],
       "font": {
         "family": "Arial",
         "size": 18,
         "weight": 500,
-        "color": "#475569"
+        "color": "#94A9C8"
       }
     },
     {
       "id": "status",
-      "text": "HYBRID MODE",
+      "text": "HYBRID FIDELITY",
       "role": "label",
       "bbox": [
-        1370,
-        48,
-        158,
-        34
+        1327,
+        51,
+        170,
+        28
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 700,
+        "color": "#EEE3FF"
+      }
+    },
+    {
+      "id": "asset-label",
+      "text": "ISOLATED ARTWORK",
+      "role": "label",
+      "bbox": [
+        130,
+        561,
+        125,
+        20
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 12,
+        "weight": 700,
+        "color": "#D7F4FF"
+      }
+    },
+    {
+      "id": "asset-note",
+      "text": "1 local PNG \u00b7 swap without touching layout",
+      "role": "label",
+      "bbox": [
+        405,
+        560,
+        330,
+        22
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 13,
+        "weight": 500,
+        "color": "#91A8C8"
+      }
+    },
+    {
+      "id": "stage-number-0",
+      "text": "01",
+      "role": "label",
+      "bbox": [
+        1024,
+        220,
+        36,
+        22
       ],
       "font": {
         "family": "Arial",
         "size": 13,
         "weight": 700,
-        "color": "#0F766E"
+        "color": "#2ED9FF"
       }
     },
     {
       "id": "stage-title-0",
-      "text": "Discover",
+      "text": "Frame",
       "role": "label",
       "bbox": [
-        134,
-        354,
-        200,
-        32
+        1024,
+        242,
+        220,
+        24
       ],
       "font": {
         "family": "Arial",
-        "size": 22,
+        "size": 16,
         "weight": 700,
-        "color": "#0F172A"
+        "color": "#F7FBFF"
       }
     },
     {
       "id": "stage-desc-0",
-      "text": "Understand the request",
+      "text": "Cards, connectors, text",
       "role": "label",
       "bbox": [
-        110,
-        386,
-        248,
-        26
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 14,
-        "weight": 500,
-        "color": "#64748B"
-      }
-    },
-    {
-      "id": "stage-title-1",
-      "text": "Compose",
-      "role": "label",
-      "bbox": [
-        512,
-        354,
-        200,
-        32
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 22,
-        "weight": 700,
-        "color": "#0F172A"
-      }
-    },
-    {
-      "id": "stage-desc-1",
-      "text": "Assemble the response",
-      "role": "label",
-      "bbox": [
-        488,
-        386,
-        248,
-        26
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 14,
-        "weight": 500,
-        "color": "#64748B"
-      }
-    },
-    {
-      "id": "stage-title-2",
-      "text": "Protect",
-      "role": "label",
-      "bbox": [
-        890,
-        354,
-        200,
-        32
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 22,
-        "weight": 700,
-        "color": "#0F172A"
-      }
-    },
-    {
-      "id": "stage-desc-2",
-      "text": "Apply policy checks",
-      "role": "label",
-      "bbox": [
-        866,
-        386,
-        248,
-        26
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 14,
-        "weight": 500,
-        "color": "#64748B"
-      }
-    },
-    {
-      "id": "stage-title-3",
-      "text": "Measure",
-      "role": "label",
-      "bbox": [
-        1268,
-        354,
-        200,
-        32
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 22,
-        "weight": 700,
-        "color": "#0F172A"
-      }
-    },
-    {
-      "id": "stage-desc-3",
-      "text": "Capture the outcome",
-      "role": "label",
-      "bbox": [
-        1244,
-        386,
-        248,
-        26
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 14,
-        "weight": 500,
-        "color": "#64748B"
-      }
-    },
-    {
-      "id": "metric-value-0",
-      "text": "4",
-      "role": "label",
-      "bbox": [
-        128,
-        617,
-        60,
-        38
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 26,
-        "weight": 700,
-        "color": "#0F172A"
-      }
-    },
-    {
-      "id": "metric-label-0",
-      "text": "replaceable assets",
-      "role": "label",
-      "bbox": [
-        228,
-        624,
-        210,
-        28
+        1164,
+        246,
+        320,
+        24
       ],
       "font": {
         "family": "Arial",
         "size": 15,
         "weight": 500,
-        "color": "#475569"
+        "color": "#A2B7D5"
+      }
+    },
+    {
+      "id": "stage-number-1",
+      "text": "02",
+      "role": "label",
+      "bbox": [
+        1024,
+        352,
+        36,
+        22
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 13,
+        "weight": 700,
+        "color": "#A78BFA"
+      }
+    },
+    {
+      "id": "stage-title-1",
+      "text": "Isolate",
+      "role": "label",
+      "bbox": [
+        1024,
+        374,
+        220,
+        24
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 16,
+        "weight": 700,
+        "color": "#F7FBFF"
+      }
+    },
+    {
+      "id": "stage-desc-1",
+      "text": "Artwork is local and replaceable",
+      "role": "label",
+      "bbox": [
+        1164,
+        378,
+        320,
+        24
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 15,
+        "weight": 500,
+        "color": "#A2B7D5"
+      }
+    },
+    {
+      "id": "stage-number-2",
+      "text": "03",
+      "role": "label",
+      "bbox": [
+        1024,
+        484,
+        36,
+        22
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 13,
+        "weight": 700,
+        "color": "#7CDBB5"
+      }
+    },
+    {
+      "id": "stage-title-2",
+      "text": "Deliver",
+      "role": "label",
+      "bbox": [
+        1024,
+        506,
+        220,
+        24
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 16,
+        "weight": 700,
+        "color": "#F7FBFF"
+      }
+    },
+    {
+      "id": "stage-desc-2",
+      "text": "Open, edit, present",
+      "role": "label",
+      "bbox": [
+        1164,
+        510,
+        320,
+        24
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 15,
+        "weight": 500,
+        "color": "#A2B7D5"
+      }
+    },
+    {
+      "id": "metric-value-0",
+      "text": "1",
+      "role": "label",
+      "bbox": [
+        150,
+        758,
+        100,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 24,
+        "weight": 700,
+        "color": "#F7FBFF"
+      }
+    },
+    {
+      "id": "metric-label-0",
+      "text": "replaceable artwork",
+      "role": "label",
+      "bbox": [
+        150,
+        794,
+        176,
+        22
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#8EA6C8"
       }
     },
     {
@@ -283,16 +334,16 @@
       "text": "100%",
       "role": "label",
       "bbox": [
-        548,
-        617,
-        60,
-        38
+        465,
+        758,
+        100,
+        32
       ],
       "font": {
         "family": "Arial",
-        "size": 26,
+        "size": 24,
         "weight": 700,
-        "color": "#0F172A"
+        "color": "#F7FBFF"
       }
     },
     {
@@ -300,16 +351,16 @@
       "text": "editable text",
       "role": "label",
       "bbox": [
-        648,
-        624,
-        210,
-        28
+        465,
+        794,
+        176,
+        22
       ],
       "font": {
         "family": "Arial",
-        "size": 15,
+        "size": 14,
         "weight": 500,
-        "color": "#475569"
+        "color": "#8EA6C8"
       }
     },
     {
@@ -317,159 +368,89 @@
       "text": "0",
       "role": "label",
       "bbox": [
-        968,
-        617,
-        60,
-        38
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 26,
-        "weight": 700,
-        "color": "#0F172A"
-      }
-    },
-    {
-      "id": "metric-label-2",
-      "text": "remote URLs",
-      "role": "label",
-      "bbox": [
-        1068,
-        624,
-        210,
-        28
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 15,
-        "weight": 500,
-        "color": "#475569"
-      }
-    },
-    {
-      "id": "panel-title",
-      "text": "The semantic layout stays editable",
-      "role": "label",
-      "bbox": [
-        104,
-        493,
-        760,
-        40
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 26,
-        "weight": 700,
-        "color": "#0F172A"
-      }
-    },
-    {
-      "id": "panel-body",
-      "text": "Artwork is isolated into four local image objects; titles, cards, arrows, metrics, and callouts remain native PowerPoint content.",
-      "role": "label",
-      "bbox": [
-        104,
-        536,
-        1320,
+        780,
+        758,
+        100,
         32
       ],
       "font": {
         "family": "Arial",
-        "size": 16,
-        "weight": 500,
-        "color": "#475569"
-      }
-    },
-    {
-      "id": "footer-title",
-      "text": "Hybrid fidelity rule",
-      "role": "label",
-      "bbox": [
-        104,
-        786,
-        180,
-        30
-      ],
-      "font": {
-        "family": "Arial",
-        "size": 18,
+        "size": 24,
         "weight": 700,
-        "color": "#FFFFFF"
+        "color": "#F7FBFF"
       }
     },
     {
-      "id": "footer-body",
-      "text": "Rasterize only the artwork that cannot be represented safely in DrawingML.",
+      "id": "metric-label-2",
+      "text": "full-slide bitmaps",
       "role": "label",
       "bbox": [
-        310,
-        786,
-        980,
-        30
+        780,
+        794,
+        176,
+        22
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 14,
+        "weight": 500,
+        "color": "#8EA6C8"
+      }
+    },
+    {
+      "id": "footer-label",
+      "text": "KEEP THE ART.",
+      "role": "label",
+      "bbox": [
+        1112,
+        758,
+        200,
+        24
       ],
       "font": {
         "family": "Arial",
         "size": 16,
-        "weight": 500,
-        "color": "#CBD5E1"
+        "weight": 700,
+        "color": "#C4B5FD"
+      }
+    },
+    {
+      "id": "footer-emphasis",
+      "text": "EDIT EVERYTHING ELSE.",
+      "role": "label",
+      "bbox": [
+        1112,
+        786,
+        340,
+        32
+      ],
+      "font": {
+        "family": "Arial",
+        "size": 21,
+        "weight": 700,
+        "color": "#F7FBFF"
       }
     }
   ],
   "assets": [
     {
-      "id": "asset-0",
+      "id": "orchestration-artwork",
       "kind": "illustration",
-      "semantic": "discover",
+      "semantic": "orchestration-core",
       "bbox": [
-        152,
-        194,
-        164,
-        164
-      ],
-      "policy": "local-raster-png"
-    },
-    {
-      "id": "asset-1",
-      "kind": "illustration",
-      "semantic": "compose",
-      "bbox": [
-        530,
-        194,
-        164,
-        164
-      ],
-      "policy": "local-raster-png"
-    },
-    {
-      "id": "asset-2",
-      "kind": "illustration",
-      "semantic": "protect",
-      "bbox": [
-        908,
-        194,
-        164,
-        164
-      ],
-      "policy": "local-raster-png"
-    },
-    {
-      "id": "asset-3",
-      "kind": "illustration",
-      "semantic": "measure",
-      "bbox": [
-        1286,
-        194,
-        164,
-        164
+        82,
+        202,
+        670,
+        340
       ],
       "policy": "local-raster-png"
     }
   ],
   "connectors": [
     {
-      "id": "connector-stage-flow",
-      "from": "region-journey",
-      "to": "region-policy",
+      "id": "hybrid-flow",
+      "from": "artwork",
+      "to": "flow",
       "routing": "left-to-right"
     }
   ]
