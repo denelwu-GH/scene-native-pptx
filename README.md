@@ -25,6 +25,12 @@ Not a screenshot wrapper. Not an OCR patch. Not a giant stack of image layers.
 
 <p align="center"><strong>A designed slide is only useful when tomorrow's team can still change it.</strong></p>
 
+<p align="center">
+  <img src="benchmarks/gallery/scene-native-pptx-demo.gif" alt="Scene Native PPTX walkthrough from design target to native editable PowerPoint" width="100%">
+</p>
+
+<p align="center"><sub>Design target → semantic layers → native objects → editable PowerPoint</sub></p>
+
 ## Stop choosing between beautiful and editable
 
 Most image-to-PPT workflows force a compromise:

@@ -25,6 +25,12 @@
 
 <p align="center"><strong>一页设计稿的价值，在于明天团队还能继续修改它。</strong></p>
 
+<p align="center">
+  <img src="benchmarks/gallery/scene-native-pptx-demo.gif" alt="Scene Native PPTX 从设计目标到原生可编辑 PowerPoint 的演示" width="100%">
+</p>
+
+<p align="center"><sub>设计目标 → 语义分层 → 原生对象 → 可编辑 PowerPoint</sub></p>
+
 ## 不再在“好看”和“可编辑”之间二选一
 
 大多数图片转 PPT 工作流都要求你接受一种妥协：
