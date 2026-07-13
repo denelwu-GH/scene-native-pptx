@@ -19,6 +19,12 @@ Not a screenshot wrapper. Not an OCR patch. Not a giant stack of image layers.
 
 </div>
 
+<p align="center">
+  <img src="benchmarks/gallery/agentic-operating-system-showcase.png" alt="Premium native editable PowerPoint created with Scene Native PPTX" width="100%">
+</p>
+
+<p align="center"><strong>A designed slide is only useful when tomorrow's team can still change it.</strong></p>
+
 ## Stop choosing between beautiful and editable
 
 Most image-to-PPT workflows force a compromise:
@@ -49,7 +55,7 @@ Most image-to-PPT workflows force a compromise:
 
 These are public synthetic regression pages rendered after a real Microsoft PowerPoint save-and-reopen round trip.
 
-## Why install it
+## Why teams install it
 
 | What you need | What Scene Native PPTX delivers |
 | --- | --- |
@@ -60,7 +66,7 @@ These are public synthetic regression pages rendered after a real Microsoft Powe
 | A workflow your team can repeat | `scene.json` is the deterministic source for SVG and PPTX |
 | Complex artwork without flattening the page | Only isolated illustrations stay as replaceable local images |
 
-## One pipeline, one source of truth
+## From design target to editable object
 
 ```text
 content -> design contract -> design reference -> scene.json
@@ -71,6 +77,12 @@ content -> design contract -> design reference -> scene.json
 - The **design contract** locks exact text, regions, hierarchy, and editability policy.
 - **`scene.json`** produces the constrained SVG and native PowerPoint deterministically.
 - The **PowerPoint round trip** is the final compatibility gate.
+
+<p align="center">
+  <img src="benchmarks/gallery/semantic-layer-exploded-view.png" alt="Scene Native PPTX decomposes a design target into semantic editable layers" width="100%">
+</p>
+
+This is not pixel slicing. A slide is rebuilt as five intentional layers: **background**, **connectors**, **native geometry**, **icons and artwork**, and **editable text**. The result is a `.pptx` where the things people actually need to change can still be selected, moved, recolored, and rewritten.
 
 ## Choose the right mode
 
@@ -89,7 +101,7 @@ cp -R scene-native-pptx/skill/scene-native-pptx ~/.codex/skills/scene-native-ppt
 
 Then call `$scene-native-pptx` in Codex.
 
-## Try it with one prompt
+## See it work with one prompt
 
 ```text
 Use $scene-native-pptx to rebuild this slide screenshot as a high-fidelity,

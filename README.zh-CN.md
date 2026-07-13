@@ -19,6 +19,12 @@
 
 </div>
 
+<p align="center">
+  <img src="benchmarks/gallery/agentic-operating-system-showcase.png" alt="由 Scene Native PPTX 生成的高品质原生可编辑 PowerPoint" width="100%">
+</p>
+
+<p align="center"><strong>一页设计稿的价值，在于明天团队还能继续修改它。</strong></p>
+
 ## 不再在“好看”和“可编辑”之间二选一
 
 大多数图片转 PPT 工作流都要求你接受一种妥协：
@@ -49,7 +55,7 @@
 
 以上均为公开合成回归页面，并且是在 Microsoft PowerPoint 实机保存、关闭和重新打开后渲染得到的真实结果。
 
-## 为什么值得安装
+## 团队为什么愿意安装
 
 | 你的真实需求 | Scene Native PPTX 的交付结果 |
 | --- | --- |
@@ -60,7 +66,7 @@
 | 团队需要稳定复用 | `scene.json` 是 SVG 和 PPTX 的确定性统一数据源 |
 | 有复杂插画又不想整页压图 | 只把难以原生表达的局部素材保留为可替换图片 |
 
-## 一条流水线，一个事实源
+## 从设计稿到可编辑对象
 
 ```text
 内容 -> 设计契约 -> 视觉参考稿 -> scene.json
@@ -71,6 +77,12 @@
 - **设计契约**负责锁定精确文字、语义区域、层级和可编辑策略。
 - **`scene.json`**确定性生成受约束 SVG 和原生 PowerPoint。
 - **PowerPoint 实机往返**是最终兼容性门禁。
+
+<p align="center">
+  <img src="benchmarks/gallery/semantic-layer-exploded-view.png" alt="Scene Native PPTX 将设计稿按语义拆解为可编辑图层" width="100%">
+</p>
+
+这不是按像素切片。每页会按 **背景**、**连接线**、**原生几何**、**图标与素材**、**可编辑文字** 五类语义层重建，最后汇成一个真正的 `.pptx`。团队真正需要改的内容仍然可以被选中、移动、改色和重写。
 
 ## 选择适合的模式
 
@@ -89,7 +101,7 @@ cp -R scene-native-pptx/skill/scene-native-pptx ~/.codex/skills/scene-native-ppt
 
 之后直接在 Codex 中调用 `$scene-native-pptx`。
 
-## 一句话开始使用
+## 一句话看到它工作
 
 ```text
 使用 $scene-native-pptx，把这张幻灯片截图重建为高保真、原生、可编辑的
