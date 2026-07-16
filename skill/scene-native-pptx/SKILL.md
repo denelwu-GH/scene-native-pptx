@@ -27,6 +27,17 @@ Treat the design image as the visual target. Treat the content/design contract a
 
 Do not silently downgrade `native-first` to raster layers.
 
+## Accept PPT Master Inputs
+
+When `$ppt-master` invokes this skill, treat its approved artifacts as upstream authority:
+
+- `deck-brief.json` defines immutable scope and rewrite permission;
+- `resolved-preferences.json` and `deck-design-system.json` define deck-level defaults;
+- `page-contracts/slide-XX.json` defines exact text, required elements, forbidden changes, claim labels, and acceptance criteria;
+- `run-manifest.json` proves strategy and design approval.
+
+Do not reinterpret approved claims or silently replace deck tokens. Record any required slide-level override in the design contract. Carry the page contract's accessible title, alt-text policy, and semantic reading order into native production and final QA.
+
 ## Phase 1: Lock Content
 
 Create `content.json` before design work. Preserve user text verbatim unless the user explicitly requests rewriting.
@@ -44,7 +55,8 @@ Define:
 - semantic regions with stable IDs and bounding boxes;
 - icons/illustrations with native or hybrid policies;
 - connector intent and z-order;
-- brand palette, fonts, spacing, and safety rules.
+- brand palette, fonts, spacing, and safety rules;
+- optional deck-token references, accessible title, alt-text policy, and semantic reading order when supplied upstream.
 
 Run:
 

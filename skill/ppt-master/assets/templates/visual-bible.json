@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "characters": [],
+  "objects": [],
+  "environment": {},
+  "camera": {},
+  "lighting": {},
+  "palette": [],
+  "forbidden": [
+    "generated text",
+    "fake logos",
+    "gibberish signage",
+    "clone faces"
+  ]
+}

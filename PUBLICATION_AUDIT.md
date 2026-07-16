@@ -1,16 +1,18 @@
 # Publication Audit
 
-Audit date: 2026-07-10
+Audit date: 2026-07-16
 
 ## Scope
 
-The review covers the installable skill, bundled templates, regression fixtures, documentation, scripts, and repository metadata intended for a public GitHub repository.
+The review covers both installable skills, bundled templates, regression fixtures, documentation, scripts, and repository metadata intended for a public GitHub repository.
 
 ## Result
 
 No API keys, passwords, access tokens, private keys, email addresses, local usernames, home-directory paths, temporary-directory paths, or remote customer URLs are intentionally included in this public tree.
 
 The public regression fixtures are generated from code. They use generic English content and programmatically drawn geometric artwork. No customer slide, corporate logo, proprietary screenshot, or organization-specific copy is included.
+
+The PPT Master fixtures use synthetic presentation strategy, preference, claim, and approval data. They contain no persisted user profile, customer preference, or real source document.
 
 ## Material Removed From The Private Working Copy
 

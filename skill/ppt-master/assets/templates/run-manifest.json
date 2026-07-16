@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "runId": "__RUN_ID__",
+  "deckName": "__DECK_NAME__",
+  "route": "__ROUTE__",
+  "createdAt": "__CREATED_AT__",
+  "phases": {
+    "brief": "draft",
+    "strategy": "pending",
+    "designSystem": "pending",
+    "visualDesign": "pending",
+    "nativeProduction": "pending",
+    "deliveryQa": "pending"
+  },
+  "approvals": {
+    "strategy": {
+      "status": "pending",
+      "approvedAt": null,
+      "note": ""
+    },
+    "design": {
+      "status": "pending",
+      "approvedAt": null,
+      "note": ""
+    }
+  },
+  "retry": {
+    "imageGenerationAttempts": 0,
+    "lastFailure": null,
+    "resumeFrom": "brief"
+  }
+}

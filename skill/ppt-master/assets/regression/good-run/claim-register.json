@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "claims": [
+    {
+      "id": "claim-01",
+      "slideId": "slide-01",
+      "statement": "PowerPoint accessibility depends on logical reading order.",
+      "maturity": "public-verified",
+      "allowedWording": "Logical object order supports screen-reader navigation.",
+      "visibleLabel": null,
+      "evidence": {
+        "status": "closed",
+        "sources": ["Microsoft PowerPoint accessibility guidance"]
+      }
+    },
+    {
+      "id": "claim-02",
+      "slideId": "slide-02",
+      "statement": "The proposed workflow can orchestrate strategy through native delivery.",
+      "maturity": "target-experience",
+      "allowedWording": "Target workflow: strategy through native delivery.",
+      "visibleLabel": "TARGET WORKFLOW",
+      "evidence": {
+        "status": "open",
+        "sources": []
+      }
+    }
+  ]
+}

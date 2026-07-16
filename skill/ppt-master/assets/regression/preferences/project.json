@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "project",
+  "preferences": {
+    "palette": {
+      "accent": "#1565D8"
+    },
+    "typography": {
+      "family": "PingFang SC"
+    }
+  }
+}

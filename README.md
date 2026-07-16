@@ -42,6 +42,22 @@ Most image-to-PPT workflows force a compromise:
 
 **Scene Native PPTX keeps the design quality while rebuilding the slide as real PowerPoint content.** In `native-first` mode, text, cards, connectors, icons, gradients, and semantic groups become native DrawingML objects that can be selected, moved, recolored, and rewritten.
 
+## Now includes PPT Master
+
+The repository now ships as a two-layer presentation system:
+
+| Skill | Responsibility |
+| --- | --- |
+| **`ppt-master`** | Audience and source audit, storyline, claims, user and project preferences, deck design system, inclusive design, approval gates, and deck-level QA |
+| **`scene-native-pptx`** | High-fidelity design reconstruction, constrained SVG, native DrawingML conversion, package validation, and PowerPoint round-trip QA |
+
+```text
+source material -> strategy -> evidence -> deck design system -> approved visual direction
+                -> scene-native-pptx -> native editable PowerPoint -> delivery QA
+```
+
+Use the engine alone when a finished design already exists. Use PPT Master when the work must begin with an old deck, source documents, or an incomplete brief.
+
 ## What lands in PowerPoint
 
 <table>
@@ -113,9 +129,10 @@ This is not pixel slicing. A slide is rebuilt as five intentional layers: **back
 ```bash
 git clone https://github.com/denelwu-GH/scene-native-pptx.git
 cp -R scene-native-pptx/skill/scene-native-pptx ~/.codex/skills/scene-native-pptx
+cp -R scene-native-pptx/skill/ppt-master ~/.codex/skills/ppt-master
 ```
 
-Then call `$scene-native-pptx` in Codex.
+Then call `$scene-native-pptx` for direct reconstruction or `$ppt-master` for full-deck production.
 
 ## See it work with one prompt
 
@@ -129,10 +146,10 @@ complete the full PowerPoint round-trip QA before delivery.
 You can also start from content instead of a screenshot:
 
 ```text
-Use $scene-native-pptx to design and generate a polished 16:9 editable
-PowerPoint slide from this content. Create the design contract first, generate
-the visual reference, rebuild it through scene.json and constrained SVG, and
-deliver the native PPTX with QA evidence.
+Use $ppt-master to turn this source material into a coherent, polished,
+accessible, native editable PowerPoint deck. Audit the sources, build the
+storyline and claim register, establish the deck design system, get approval
+for the visual direction, then use $scene-native-pptx for native production.
 ```
 
 ## Measured against the routes we actually tried
@@ -163,14 +180,19 @@ The score is an engineering benchmark for the same complex-slide use case, not a
 python3 ~/.codex/skills/scene-native-pptx/scripts/run_regression.py \
   --skill-dir ~/.codex/skills/scene-native-pptx \
   --output-dir /tmp/scene-native-pptx-regression
+
+python3 ~/.codex/skills/ppt-master/scripts/run_regression.py \
+  --skill-dir ~/.codex/skills/ppt-master \
+  --output-dir /tmp/ppt-master-regression
 ```
 
-The suite contains an all-native orchestration page and a hybrid page with separately editable artwork.
+The native-engine suite contains an all-native orchestration page and a hybrid page with separately editable artwork. The PPT Master suite checks preference precedence, feedback scope, claims, contrast, approvals, and delivery readiness.
 
 ## Repository layout
 
 ```text
-skill/scene-native-pptx/   installable Codex skill
+skill/ppt-master/          full-deck strategy and production orchestrator
+skill/scene-native-pptx/   native editable PowerPoint engine
 benchmarks/                measured evidence, methodology, charts, and gallery
 tools/                     public fixture, chart, metadata, and audit utilities
 PUBLICATION_AUDIT.md       release-time privacy and secret review
@@ -196,6 +218,6 @@ The repository is released under the [MIT License](LICENSE). The converter subse
 
 ### Keep the design. Keep the editability. Ship a PowerPoint that survives PowerPoint.
 
-**[Install the skill](#install-in-30-seconds) · [See the benchmark](#measured-against-the-routes-we-actually-tried) · [Read the Chinese guide](README.zh-CN.md)**
+**[Install the skills](#install-in-30-seconds) · [See the benchmark](#measured-against-the-routes-we-actually-tried) · [Read the Chinese guide](README.zh-CN.md)**
 
 </div>

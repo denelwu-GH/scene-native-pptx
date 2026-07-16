@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "deck": {
+    "name": "__DECK_NAME__",
+    "audience": "",
+    "objective": "",
+    "decision": "",
+    "language": "zh-CN"
+  },
+  "route": "__ROUTE__",
+  "sources": [],
+  "constraints": {
+    "preserveSourceFiles": true,
+    "preserveText": false,
+    "preserveLayout": false,
+    "allowedRewrite": true,
+    "requiredSlides": [],
+    "excludedSlides": []
+  },
+  "preferences": {},
+  "status": "draft"
+}

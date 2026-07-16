@@ -1,0 +1,4 @@
+interface:
+  display_name: "PPT Master"
+  short_description: "从内容策略到原生可编辑 PowerPoint 的完整生产系统"
+  default_prompt: "Use $ppt-master to turn my source material into a polished, accessible, native editable PowerPoint deck."

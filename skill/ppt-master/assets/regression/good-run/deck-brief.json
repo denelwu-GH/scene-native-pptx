@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "deck": {
+    "name": "PPT Master Regression Deck",
+    "audience": "Product leadership",
+    "objective": "Explain the production workflow",
+    "decision": "Approve a native editable pilot",
+    "language": "en-US"
+  },
+  "route": "strategy-to-native",
+  "sources": [
+    {
+      "path": "/example/source.pptx",
+      "authority": "source-text"
+    }
+  ],
+  "constraints": {
+    "preserveSourceFiles": true,
+    "preserveText": false,
+    "preserveLayout": false,
+    "allowedRewrite": true,
+    "requiredSlides": [1, 2],
+    "excludedSlides": []
+  },
+  "preferences": {
+    "informationDensity": "high"
+  },
+  "status": "approved"
+}

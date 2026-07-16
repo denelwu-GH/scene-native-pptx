@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "tokens": {
+    "canvas": {
+      "width": 1600,
+      "height": 900,
+      "aspectRatio": "16:9",
+      "safeArea": [48, 36, 48, 36]
+    },
+    "grid": {
+      "columns": 12,
+      "gutter": 24,
+      "margin": 64
+    },
+    "colors": {
+      "background": "#FFFFFF",
+      "surface": "#F7F9FC",
+      "textPrimary": "#111827",
+      "textSecondary": "#4B5563",
+      "primary": "#1565D8",
+      "accent": "#00A6A6",
+      "success": "#16803A",
+      "warning": "#9A6700",
+      "danger": "#B42318"
+    },
+    "typography": {
+      "family": "PingFang SC",
+      "titlePt": 30,
+      "subtitlePt": 22,
+      "bodyPt": 18,
+      "captionPt": 14,
+      "metricPt": 32
+    },
+    "spacing": [4, 8, 12, 16, 24, 32, 48, 64],
+    "shape": {
+      "radius": 6,
+      "borderWidth": 1,
+      "shadow": "subtle"
+    },
+    "iconography": {
+      "style": "outline",
+      "strokeWidth": 2
+    },
+    "chart": {
+      "palette": ["#1565D8", "#00A6A6", "#7C3AED", "#E59F00"],
+      "showDirectLabels": true
+    }
+  },
+  "components": [],
+  "accessibility": {
+    "minBodyFontPt": 18,
+    "contrastPairs": [
+      {
+        "role": "primary-text",
+        "foreground": "#111827",
+        "background": "#FFFFFF",
+        "minimum": 4.5
+      },
+      {
+        "role": "secondary-text",
+        "foreground": "#4B5563",
+        "background": "#FFFFFF",
+        "minimum": 4.5
+      }
+    ]
+  },
+  "allowedOverrides": []
+}

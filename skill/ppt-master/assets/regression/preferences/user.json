@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "user",
+  "preferences": {
+    "language": "zh-CN",
+    "informationDensity": "medium",
+    "palette": {
+      "accent": "#E31B23"
+    },
+    "forbiddenStyles": ["purple gradients"],
+    "delivery": {
+      "nativeEditable": true
+    }
+  }
+}

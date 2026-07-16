@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "runId": "regression-good-run",
+  "deckName": "PPT Master Regression Deck",
+  "route": "strategy-to-native",
+  "createdAt": "2026-07-16T00:00:00+00:00",
+  "phases": {
+    "brief": "complete",
+    "strategy": "complete",
+    "designSystem": "complete",
+    "visualDesign": "complete",
+    "nativeProduction": "complete",
+    "deliveryQa": "complete"
+  },
+  "approvals": {
+    "strategy": {
+      "status": "approved",
+      "approvedAt": "2026-07-16T00:00:00+00:00",
+      "note": "Regression approval"
+    },
+    "design": {
+      "status": "approved",
+      "approvedAt": "2026-07-16T00:00:00+00:00",
+      "note": "Regression approval"
+    }
+  },
+  "retry": {
+    "imageGenerationAttempts": 1,
+    "lastFailure": null,
+    "resumeFrom": "complete"
+  }
+}

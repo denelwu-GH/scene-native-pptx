@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "slideId": "slide-02",
+  "sourcePage": 2,
+  "purpose": "Explain the target production method.",
+  "takeaway": "Contracts and native reconstruction protect editability.",
+  "storyRole": "mechanism",
+  "evidenceClass": "target-experience",
+  "contentPolicy": "rewritable",
+  "requiredElements": ["title", "workflow", "maturity-label"],
+  "forbiddenChanges": ["Do not label the target workflow as deployed."],
+  "claimIds": ["claim-02"],
+  "visualPattern": "process-flow",
+  "firstFocalPoint": "the contract-to-native workflow",
+  "accessibility": {
+    "title": "The native production method",
+    "readingOrder": ["title", "maturity-label", "workflow"],
+    "altText": []
+  },
+  "acceptanceCriteria": ["The target maturity label remains visible."]
+}

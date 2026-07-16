@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "slides": [
+    {
+      "id": "slide-01",
+      "title": "Why native delivery matters",
+      "role": "context",
+      "takeaway": "A good-looking image is not yet a PowerPoint deliverable.",
+      "transition": "Move from the delivery gap to the production method.",
+      "evidenceClass": "public-verified"
+    },
+    {
+      "id": "slide-02",
+      "title": "The native production method",
+      "role": "mechanism",
+      "takeaway": "A design contract and native reconstruction preserve editability.",
+      "transition": "Close with a pilot decision.",
+      "evidenceClass": "target-experience"
+    }
+  ]
+}

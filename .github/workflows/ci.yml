@@ -24,3 +24,8 @@ jobs:
           python skill/scene-native-pptx/scripts/run_regression.py \
             --skill-dir skill/scene-native-pptx \
             --output-dir regression-output
+      - name: Run PPT Master workflow regression
+        run: |
+          python skill/ppt-master/scripts/run_regression.py \
+            --skill-dir skill/ppt-master \
+            --output-dir /tmp/ppt-master-regression

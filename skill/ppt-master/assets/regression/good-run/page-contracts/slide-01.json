@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "slideId": "slide-01",
+  "sourcePage": 1,
+  "purpose": "Establish the editable-delivery gap.",
+  "takeaway": "A design image is not yet a native presentation.",
+  "storyRole": "context",
+  "evidenceClass": "public-verified",
+  "contentPolicy": "rewritable",
+  "requiredElements": ["title", "comparison", "source-note"],
+  "forbiddenChanges": ["Do not imply every image-based deck is unusable."],
+  "claimIds": ["claim-01"],
+  "visualPattern": "comparison",
+  "firstFocalPoint": "editable versus flattened comparison",
+  "accessibility": {
+    "title": "Why native delivery matters",
+    "readingOrder": ["title", "comparison", "source-note"],
+    "altText": []
+  },
+  "acceptanceCriteria": ["The comparison remains understandable without color alone."]
+}

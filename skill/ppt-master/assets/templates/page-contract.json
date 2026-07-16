@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "slideId": "__SLIDE_ID__",
+  "sourcePage": null,
+  "purpose": "",
+  "takeaway": "",
+  "storyRole": "",
+  "evidenceClass": "target-experience",
+  "contentPolicy": "rewritable",
+  "requiredElements": [],
+  "forbiddenChanges": [],
+  "claimIds": [],
+  "visualPattern": "",
+  "firstFocalPoint": "",
+  "accessibility": {
+    "title": "",
+    "readingOrder": [],
+    "altText": []
+  },
+  "acceptanceCriteria": []
+}
