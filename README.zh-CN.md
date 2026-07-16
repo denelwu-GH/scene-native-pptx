@@ -1,21 +1,22 @@
 <div align="center">
 
-# Scene Native PPTX
+# Scene Native PPTX + PPT Master
 
-### PPT手搓时代结束了
+### PPT 手搓时代结束了：从一堆资料，到一份真正能交付的 PowerPoint
 
-**Canva、Gamma、Beautiful.ai 帮你完成设计；Scene Native PPTX 帮你交付稳定、原生、可编辑的 PowerPoint。**
+**PPT Master 负责故事线、证据、用户偏好和整套设计；Scene Native PPTX 负责把确认后的视觉方案做成稳定、原生、可编辑的 PowerPoint。**
 
-不是截图套壳，不是 OCR 补丁，也不是几百 MB 的图片图层堆叠。
+可以从一句需求、旧 PPT、原始资料、截图或完整设计稿开始，最后交付一份明天团队仍然能够继续修改的 PowerPoint。
 
 <p>
   <a href="https://github.com/denelwu-GH/scene-native-pptx/actions/workflows/ci.yml"><img alt="回归测试" src="https://github.com/denelwu-GH/scene-native-pptx/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/denelwu-GH/scene-native-pptx/releases/tag/v0.2.0"><img alt="v0.2.0 版本" src="https://img.shields.io/badge/%E7%89%88%E6%9C%AC-v0.2.0-7C3AED.svg"></a>
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A.svg"></a>
   <img alt="原生可编辑 PowerPoint" src="https://img.shields.io/badge/PowerPoint-%E5%8E%9F%E7%94%9F%E5%8F%AF%E7%BC%96%E8%BE%91-0F766E.svg">
   <img alt="实测评分 9.4 分" src="https://img.shields.io/badge/%E5%AE%9E%E6%B5%8B%E8%AF%84%E5%88%86-9.4%2F10-2563EB.svg">
 </p>
 
-<p><a href="README.md">English</a> | <strong>简体中文</strong></p>
+<p><a href="README.md">English</a> | <strong>简体中文</strong> · <a href="CHANGELOG.zh-CN.md">更新记录</a></p>
 
 </div>
 
@@ -42,7 +43,7 @@
 
 **Scene Native PPTX 在保留设计质量的同时，把页面重建为真正的 PowerPoint 内容。** 在 `native-first` 模式下，文字、卡片、连接线、图标、渐变和语义分组都会成为可选择、可移动、可改色、可改文案的原生 DrawingML 对象。
 
-## 现在包含 PPT Master
+## 一个仓库，两种起点
 
 仓库已经升级为双层 PPT 生产系统：
 
@@ -56,7 +57,12 @@
          -> scene-native-pptx -> 原生可编辑 PowerPoint -> 交付验收
 ```
 
-已经有完整设计稿时，可以直接使用底层引擎；从旧 PPT、资料或一句需求开始时，使用 PPT Master。
+| 你手上有什么 | 使用什么 | 最终得到什么 |
+| --- | --- | --- |
+| 一句话需求、原始资料或旧 PPT | `$ppt-master` | 故事线、证据、整套设计系统、视觉方向和原生交付 |
+| 截图或已经确认的设计稿 | `$scene-native-pptx` | 高保真原生可编辑重建 |
+
+已经有完整设计稿时，可以直接使用底层引擎；还需要先把事情讲清楚时，就从 PPT Master 开始。
 
 ## 真正进入 PowerPoint 的效果
 
@@ -193,9 +199,16 @@ skill/ppt-master/          整套 PPT 策略与生产总控
 skill/scene-native-pptx/   原生可编辑 PowerPoint 底层引擎
 benchmarks/                实测证据、评分方法、图表和效果图库
 tools/                     公开样本、图表、元数据和审计工具
+CHANGELOG.zh-CN.md         中文版本更新记录
 PUBLICATION_AUDIT.md       发布前隐私与敏感信息审计
 THIRD_PARTY_NOTICES.md     第三方依赖和许可声明
 ```
+
+## 版本与更新记录
+
+- [PPT Master v0.2.0](https://github.com/denelwu-GH/scene-native-pptx/releases/tag/v0.2.0)：新增整套 PPT 总控、分级偏好、设计系统、包容性设计、主张证据和审批关卡。
+- [Scene Native PPTX v0.1.0](https://github.com/denelwu-GH/scene-native-pptx/releases/tag/v0.1.0)：首个公开版原生可编辑重建引擎。
+- 查看完整[更新记录](CHANGELOG.zh-CN.md)。
 
 ## 坦诚说明当前限制
 

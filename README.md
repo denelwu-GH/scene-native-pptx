@@ -1,21 +1,22 @@
 <div align="center">
 
-# Scene Native PPTX
+# Scene Native PPTX + PPT Master
 
-### Stop redrawing slides.
+### From messy source material to a PowerPoint your team can actually ship.
 
-**Beautiful in. Editable out. Turn polished slide designs, screenshots, and image-based decks into stable, native, editable PowerPoint files.**
+**PPT Master shapes the story, evidence, preferences, and design system. Scene Native PPTX turns the approved visual direction into a stable, native, editable PowerPoint.**
 
-Not a screenshot wrapper. Not an OCR patch. Not a giant stack of image layers.
+Start with a brief, an old deck, source documents, a screenshot, or a polished design. Finish with a PowerPoint people can still edit tomorrow.
 
 <p>
   <a href="https://github.com/denelwu-GH/scene-native-pptx/actions/workflows/ci.yml"><img alt="Regression" src="https://github.com/denelwu-GH/scene-native-pptx/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/denelwu-GH/scene-native-pptx/releases/tag/v0.2.0"><img alt="Release v0.2.0" src="https://img.shields.io/badge/release-v0.2.0-7C3AED.svg"></a>
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-16A34A.svg"></a>
   <img alt="Native editable PowerPoint" src="https://img.shields.io/badge/PowerPoint-native%20editable-0F766E.svg">
   <img alt="Benchmark 9.4 out of 10" src="https://img.shields.io/badge/benchmark-9.4%2F10-2563EB.svg">
 </p>
 
-<p><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
+<p><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a> · <a href="CHANGELOG.md">Changelog</a></p>
 
 </div>
 
@@ -42,7 +43,7 @@ Most image-to-PPT workflows force a compromise:
 
 **Scene Native PPTX keeps the design quality while rebuilding the slide as real PowerPoint content.** In `native-first` mode, text, cards, connectors, icons, gradients, and semantic groups become native DrawingML objects that can be selected, moved, recolored, and rewritten.
 
-## Now includes PPT Master
+## One repository, two starting points
 
 The repository now ships as a two-layer presentation system:
 
@@ -56,7 +57,12 @@ source material -> strategy -> evidence -> deck design system -> approved visual
                 -> scene-native-pptx -> native editable PowerPoint -> delivery QA
 ```
 
-Use the engine alone when a finished design already exists. Use PPT Master when the work must begin with an old deck, source documents, or an incomplete brief.
+| Start with | Use | Result |
+| --- | --- | --- |
+| Brief, source documents, or an old deck | `$ppt-master` | Storyline, evidence, deck system, visual direction, and native delivery |
+| Screenshot or approved design | `$scene-native-pptx` | High-fidelity native editable reconstruction |
+
+Use the engine alone when a finished design already exists. Use PPT Master when the presentation still needs thinking before it needs drawing.
 
 ## What lands in PowerPoint
 
@@ -195,9 +201,16 @@ skill/ppt-master/          full-deck strategy and production orchestrator
 skill/scene-native-pptx/   native editable PowerPoint engine
 benchmarks/                measured evidence, methodology, charts, and gallery
 tools/                     public fixture, chart, metadata, and audit utilities
+CHANGELOG.md               public release history
 PUBLICATION_AUDIT.md       release-time privacy and secret review
 THIRD_PARTY_NOTICES.md     bundled dependency attribution
 ```
+
+## Releases and change history
+
+- [PPT Master v0.2.0](https://github.com/denelwu-GH/scene-native-pptx/releases/tag/v0.2.0): full-deck orchestration, scoped preferences, deck design systems, inclusive design, claims, and approval gates.
+- [Scene Native PPTX v0.1.0](https://github.com/denelwu-GH/scene-native-pptx/releases/tag/v0.1.0): initial public native-editable reconstruction engine.
+- Read the complete [Changelog](CHANGELOG.md).
 
 ## Honest limits
 
