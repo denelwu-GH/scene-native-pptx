@@ -4,6 +4,19 @@ All notable public changes to Scene Native PPTX and PPT Master are recorded here
 
 中文版本：[CHANGELOG.zh-CN.md](CHANGELOG.zh-CN.md)
 
+## Unreleased
+
+### Added
+
+- Added bilingual PPT Master workflow diagrams showing both supported starting points, the strategy layer, the native reconstruction engine, approval, and final PowerPoint verification.
+
+### Changed
+
+- Reworked README copy around concrete user outcomes instead of internal implementation terminology.
+- Put the full-deck `$ppt-master` prompt before the direct-reconstruction prompt.
+- Expanded the Canva, Gamma, and Beautiful.ai section to explain the earlier strategy route as well as native final-mile delivery.
+- Repositioned the README hero and section headlines with a higher-impact, outcome-first marketing voice while retaining public proof, methodology, and honest-limit sections.
+
 ## [0.2.0] - 2026-07-16
 
 ### Added

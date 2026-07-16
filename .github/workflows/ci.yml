@@ -19,6 +19,7 @@ jobs:
       - run: python tools/audit_public_tree.py .
       - run: python tools/generate_public_fixtures.py
       - run: python tools/generate_benchmark_chart.py
+      - run: python tools/generate_ppt_master_workflow.py
       - name: Run two-sample regression
         run: |
           python skill/scene-native-pptx/scripts/run_regression.py \

@@ -14,6 +14,8 @@ The public regression fixtures are generated from code. They use generic English
 
 The PPT Master fixtures use synthetic presentation strategy, preference, claim, and approval data. They contain no persisted user profile, customer preference, or real source document.
 
+The bilingual PPT Master workflow diagrams are generated deterministically from generic product copy and geometric SVG primitives. They contain no customer artwork, private source content, or external media.
+
 ## Material Removed From The Private Working Copy
 
 - organization-specific slide references and screenshots;

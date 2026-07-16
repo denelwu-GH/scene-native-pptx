@@ -1,12 +1,12 @@
 <div align="center">
 
-# Scene Native PPTX + PPT Master
+# PPT Master + Scene Native PPTX
 
-### From messy source material to a PowerPoint your team can actually ship.
+### Stop rebuilding slides by hand. Ship native, editable PowerPoint from almost anything.
 
-**PPT Master shapes the story, evidence, preferences, and design system. Scene Native PPTX turns the approved visual direction into a stable, native, editable PowerPoint.**
+**Drop in a brief, an old deck, source documents, screenshots, or a finished design. Get back a presentation that is ready to present, revise, and deliver in Microsoft PowerPoint.**
 
-Start with a brief, an old deck, source documents, a screenshot, or a polished design. Finish with a PowerPoint people can still edit tomorrow.
+This is not another AI that stops at attractive layouts. It combines **storyline, evidence, deck design, scoped preferences, native editable production, and real PowerPoint QA** in one reusable skill stack.
 
 <p>
   <a href="https://github.com/denelwu-GH/scene-native-pptx/actions/workflows/ci.yml"><img alt="Regression" src="https://github.com/denelwu-GH/scene-native-pptx/actions/workflows/ci.yml/badge.svg"></a>
@@ -24,7 +24,7 @@ Start with a brief, an old deck, source documents, a screenshot, or a polished d
   <img src="benchmarks/gallery/agentic-operating-system-showcase.png" alt="Premium native editable PowerPoint created with Scene Native PPTX" width="100%">
 </p>
 
-<p align="center"><strong>A designed slide is only useful when tomorrow's team can still change it.</strong></p>
+<p align="center"><strong>It does not put a picture inside PowerPoint. It turns the design into PowerPoint.</strong></p>
 
 <p align="center">
   <img src="benchmarks/gallery/scene-native-pptx-demo.gif" alt="Scene Native PPTX walkthrough from design target to native editable PowerPoint" width="100%">
@@ -32,30 +32,31 @@ Start with a brief, an old deck, source documents, a screenshot, or a polished d
 
 <p align="center"><sub>Design target → semantic layers → native objects → editable PowerPoint</sub></p>
 
-## Stop choosing between beautiful and editable
+## You may never want to rebuild a deck by hand again
 
-Most image-to-PPT workflows force a compromise:
+Plenty of tools can generate something that looks like a presentation. The compromises appear when the file has to survive real delivery:
 
 - keep the design as one flat image and lose editability;
 - recover text with OCR and accept missing words or layout drift;
 - slice icons and frames into fragile image layers;
 - rebuild everything manually and lose the original visual quality.
 
-**Scene Native PPTX keeps the design quality while rebuilding the slide as real PowerPoint content.** In `native-first` mode, text, cards, connectors, icons, gradients, and semantic groups become native DrawingML objects that can be selected, moved, recolored, and rewritten.
+**PPT Master first turns the material into a presentation that can persuade. Scene Native PPTX then rebuilds the approved design as real PowerPoint content.** In `native-first` mode, text, cards, connectors, icons, gradients, and semantic groups become native DrawingML objects that can be selected, moved, recolored, and rewritten.
 
-## One repository, two starting points
+## One skill stack for the entire PowerPoint job
 
-The repository now ships as a two-layer presentation system:
+From “I have a pile of source material” to “this deck is ready for the room,” each layer owns the work it does best:
 
 | Skill | Responsibility |
 | --- | --- |
 | **`ppt-master`** | Audience and source audit, storyline, claims, user and project preferences, deck design system, inclusive design, approval gates, and deck-level QA |
 | **`scene-native-pptx`** | High-fidelity design reconstruction, constrained SVG, native DrawingML conversion, package validation, and PowerPoint round-trip QA |
 
-```text
-source material -> strategy -> evidence -> deck design system -> approved visual direction
-                -> scene-native-pptx -> native editable PowerPoint -> delivery QA
-```
+<p align="center">
+  <img src="benchmarks/gallery/ppt-master-workflow.svg" alt="PPT Master workflow from source material to native editable PowerPoint" width="100%">
+</p>
+
+<p align="center"><sub>Start with whatever you have. Approve the thinking and the design. Deliver a PowerPoint that remains editable.</sub></p>
 
 | Start with | Use | Result |
 | --- | --- | --- |
@@ -83,10 +84,12 @@ Use the engine alone when a finished design already exists. Use PPT Master when 
 
 These are public synthetic regression pages rendered after a real Microsoft PowerPoint save-and-reopen round trip.
 
-## Why teams install it
+## Why PowerPoint power users install it
 
-| What you need | What Scene Native PPTX delivers |
+| What you need | What the two-skill system delivers |
 | --- | --- |
+| My source material is messy | PPT Master turns it into a storyline, claim register, and page-by-page production contract |
+| I do not want to repeat the same feedback | Explicit preferences can be scoped to the user, project, or current run without storing private deck content |
 | A slide that still looks designed | A visual design pass remains the fidelity target |
 | Exact wording | Text comes from a design contract, not OCR guesses |
 | Real editability | Text, cards, paths, connectors, and groups become native objects |
@@ -94,15 +97,16 @@ These are public synthetic regression pages rendered after a real Microsoft Powe
 | A workflow your team can repeat | `scene.json` is the deterministic source for SVG and PPTX |
 | Complex artwork without flattening the page | Only isolated illustrations stay as replaceable local images |
 
-## Coming from Canva, Gamma, or Beautiful.ai?
+## Canva and Gamma can start the draft. We finish the PowerPoint.
 
-Canva, Gamma, and Beautiful.ai are strong tools for visual creation, AI-assisted first drafts, and browser-based presentation workflows. Scene Native PPTX solves a different final-mile problem:
+Canva, Gamma, and Beautiful.ai are strong tools for visual creation, AI-assisted first drafts, and browser-based presentation workflows. But for teams that must deliver a `.pptx`, keep editing it, fit a company template, and survive stakeholder revisions, **generation is only the first half. Working PowerPoint delivery is the second.**
 
+- PPT Master can begin earlier with source documents, an old deck, audience goals, and approval constraints.
 - Start with a design that is already visually approved, including an exported slide image from another creation tool.
 - Rebuild the meaningful text, geometry, cards, paths, and connectors as native PowerPoint content.
 - Deliver a `.pptx` that a recipient can still revise in Microsoft PowerPoint without redrawing the slide.
 
-**Canva and Gamma help make the design. Scene Native PPTX helps deliver it as native editable PowerPoint.** This is a workflow distinction, not an affiliation or a blanket product ranking.
+**Use PPT Master when the presentation still needs strategy. Use Scene Native PPTX when the design is ready for native delivery.** We are not competing to produce the fastest browser draft. We complete the last mile those workflows often leave unfinished: **native, editable, reusable output validated in PowerPoint.** This is a delivery-workflow position, not an affiliation or an unconditional product ranking.
 
 ## From design target to editable object
 
@@ -130,7 +134,7 @@ This is not pixel slicing. A slide is rebuilt as five intentional layers: **back
 | `hybrid-fidelity` | Slides with photography, AI illustrations, complex blur, or brand artwork | Native text and layout plus isolated replaceable PNG/JPEG/WebP assets |
 | `gorden-compat` | Existing bitmap slides with no structured source | Legacy background, frame, icon, and text layering as a fallback |
 
-## Install in 30 seconds
+## Install a PowerPoint production line in 30 seconds
 
 ```bash
 git clone https://github.com/denelwu-GH/scene-native-pptx.git
@@ -140,16 +144,7 @@ cp -R scene-native-pptx/skill/ppt-master ~/.codex/skills/ppt-master
 
 Then call `$scene-native-pptx` for direct reconstruction or `$ppt-master` for full-deck production.
 
-## See it work with one prompt
-
-```text
-Use $scene-native-pptx to rebuild this slide screenshot as a high-fidelity,
-native, editable PowerPoint. Preserve the exact text and layout. Use
-native-first unless isolated complex artwork requires hybrid-fidelity, and
-complete the full PowerPoint round-trip QA before delivery.
-```
-
-You can also start from content instead of a screenshot:
+## Hand it your next deck in one prompt
 
 ```text
 Use $ppt-master to turn this source material into a coherent, polished,
@@ -158,7 +153,16 @@ storyline and claim register, establish the deck design system, get approval
 for the visual direction, then use $scene-native-pptx for native production.
 ```
 
-## Measured against the routes we actually tried
+Already have the design? Start directly with the native engine:
+
+```text
+Use $scene-native-pptx to rebuild this slide screenshot as a high-fidelity,
+native, editable PowerPoint. Preserve the exact text and layout. Use
+native-first unless isolated complex artwork requires hybrid-fidelity, and
+complete the full PowerPoint round-trip QA before delivery.
+```
+
+## We did not declare it the best. We ran five approaches.
 
 ![Editable PowerPoint reconstruction benchmark](benchmarks/benchmark-comparison.svg)
 
@@ -172,7 +176,7 @@ for the visual direction, then use $scene-native-pptx for native production.
 
 The score is an engineering benchmark for the same complex-slide use case, not a universal product ranking. It combines visual fidelity, editability, PowerPoint safety, repeatability, and file efficiency. See the [methodology](benchmarks/methodology.md) and [raw scores](benchmarks/benchmark-scores.json).
 
-## Proof, not promises
+## Big promise. Public proof.
 
 - A measured native sample produced **185 native shapes, 10 groups, 63 text runs, and 0 pictures**.
 - PowerPoint for Mac 16.107 completed **open, save, close, and reopen with no repair prompt**.
@@ -229,8 +233,8 @@ The repository is released under the [MIT License](LICENSE). The converter subse
 
 <div align="center">
 
-### Keep the design. Keep the editability. Ship a PowerPoint that survives PowerPoint.
+### Stop hand-building the next deck. Give PPT Master the sources and take back an editable deliverable.
 
-**[Install the skills](#install-in-30-seconds) · [See the benchmark](#measured-against-the-routes-we-actually-tried) · [Read the Chinese guide](README.zh-CN.md)**
+**[Install the skills](#install-a-powerpoint-production-line-in-30-seconds) · [See the benchmark](#we-did-not-declare-it-the-best-we-ran-five-approaches) · [Read the Chinese guide](README.zh-CN.md)**
 
 </div>

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#03070D"/><stop offset="0.55" stop-color="#07111C"/><stop offset="1" stop-color="#04080E"/></linearGradient>
+<linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111D2A"/><stop offset="1" stop-color="#08121D"/></linearGradient>
+<radialGradient id="core"><stop offset="0" stop-color="#0EA5E9" stop-opacity="0.92"/><stop offset="0.52" stop-color="#075985" stop-opacity="0.78"/><stop offset="1" stop-color="#07111D"/></radialGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#163149" stroke-width="1" opacity="0.34"/></pattern>
+<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#38BDF8"/></marker>
+</defs>
+<rect width="1800" height="900" fill="url(#bg)"/>
+<rect width="1800" height="900" fill="url(#grid)"/>
+<path d="M0 122H1800" stroke="#17334A"/>
+<text x="54" y="64" fill="#F8FBFF" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800" text-anchor="start" letter-spacing="0">FROM SOURCE TO NATIVE POWERPOINT</text>
+<text x="56" y="98" fill="#91A7BD" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" text-anchor="start" letter-spacing="0">PPT Master thinks. Scene Native PPTX builds. PowerPoint verifies.</text>
+<rect x="1496" y="42" width="250" height="48" rx="24" fill="#0A1C2B" stroke="#22D3EE" stroke-width="1.5"/>
+<circle cx="1523" cy="66" r="6" fill="#34D399"/>
+<text x="1627" y="73" fill="#C9F7FF" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="0">TWO-SKILL SYSTEM</text>
+<text x="52" y="165" fill="#67E8F9" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" letter-spacing="1">START ANYWHERE</text>
+<rect x="52" y="198" width="250" height="90" rx="10" fill="url(#panel)" stroke="#274866" stroke-width="2"/>
+<rect x="52" y="198" width="5" height="90" rx="2.5" fill="#38BDF8"/>
+<circle cx="84" cy="243" r="19" fill="#07111D" stroke="#38BDF8" stroke-width="2"/>
+<text x="84" y="249" fill="#38BDF8" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="0">01</text>
+<text x="116" y="250" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0">ONE-LINE BRIEF</text>
+<rect x="52" y="315" width="250" height="90" rx="10" fill="url(#panel)" stroke="#274866" stroke-width="2"/>
+<rect x="52" y="315" width="5" height="90" rx="2.5" fill="#A78BFA"/>
+<circle cx="84" cy="360" r="19" fill="#07111D" stroke="#A78BFA" stroke-width="2"/>
+<text x="84" y="366" fill="#A78BFA" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="0">02</text>
+<text x="116" y="367" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0">OLD DECK</text>
+<rect x="52" y="432" width="250" height="90" rx="10" fill="url(#panel)" stroke="#274866" stroke-width="2"/>
+<rect x="52" y="432" width="5" height="90" rx="2.5" fill="#34D399"/>
+<circle cx="84" cy="477" r="19" fill="#07111D" stroke="#34D399" stroke-width="2"/>
+<text x="84" y="483" fill="#34D399" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="0">03</text>
+<text x="116" y="484" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0">SOURCE DOCS</text>
+<rect x="52" y="549" width="250" height="90" rx="10" fill="url(#panel)" stroke="#274866" stroke-width="2"/>
+<rect x="52" y="549" width="5" height="90" rx="2.5" fill="#FBBF24"/>
+<circle cx="84" cy="594" r="19" fill="#07111D" stroke="#FBBF24" stroke-width="2"/>
+<text x="84" y="600" fill="#FBBF24" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="0">04</text>
+<text x="116" y="601" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0">DESIGN TARGET</text>
+<path d="M302 395H342" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)" filter="url(#glow)"/>
+<rect x="350" y="150" width="610" height="550" rx="14" fill="#07111D" fill-opacity="0.88" stroke="#1C6385" stroke-width="2"/>
+<text x="380" y="186" fill="#67E8F9" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" text-anchor="start" letter-spacing="1">PPT MASTER</text>
+<rect x="808" y="165" width="120" height="30" rx="15" fill="#0B2C3D" stroke="#22D3EE"/>
+<text x="868" y="186" fill="#A5F3FC" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="1">STRATEGY</text>
+<rect x="385" y="220" width="225" height="110" rx="10" fill="url(#panel)" stroke="#274866" stroke-width="2"/>
+<rect x="385" y="220" width="5" height="110" rx="2.5" fill="#38BDF8"/>
+<circle cx="413" cy="250" r="10" fill="#07111D" stroke="#38BDF8" stroke-width="2"/>
+<circle cx="413" cy="250" r="3.5" fill="#38BDF8"/>
+<text x="434" y="256" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="start" letter-spacing="0">STORYLINE</text>
+<text x="405" y="292" fill="#91A7BD" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" letter-spacing="0">Page roles and takeaways</text>
+<rect x="700" y="220" width="225" height="110" rx="10" fill="url(#panel)" stroke="#274866" stroke-width="2"/>
+<rect x="700" y="220" width="5" height="110" rx="2.5" fill="#FBBF24"/>
+<circle cx="728" cy="250" r="10" fill="#07111D" stroke="#FBBF24" stroke-width="2"/>
+<circle cx="728" cy="250" r="3.5" fill="#FBBF24"/>
+<text x="749" y="256" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="start" letter-spacing="0">CLAIMS &amp; EVIDENCE</text>
+<text x="720" y="292" fill="#91A7BD" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" letter-spacing="0">Verified, PoC, target, vision</text>
+<rect x="385" y="515" width="225" height="110" rx="10" fill="url(#panel)" stroke="#274866" stroke-width="2"/>
+<rect x="385" y="515" width="5" height="110" rx="2.5" fill="#A78BFA"/>
+<circle cx="413" cy="545" r="10" fill="#07111D" stroke="#A78BFA" stroke-width="2"/>
+<circle cx="413" cy="545" r="3.5" fill="#A78BFA"/>
+<text x="434" y="551" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="start" letter-spacing="0">DESIGN SYSTEM</text>
+<text x="405" y="587" fill="#91A7BD" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" letter-spacing="0">Tokens, patterns, components</text>
+<rect x="700" y="515" width="225" height="110" rx="10" fill="url(#panel)" stroke="#274866" stroke-width="2"/>
+<rect x="700" y="515" width="5" height="110" rx="2.5" fill="#34D399"/>
+<circle cx="728" cy="545" r="10" fill="#07111D" stroke="#34D399" stroke-width="2"/>
+<circle cx="728" cy="545" r="3.5" fill="#34D399"/>
+<text x="749" y="551" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="start" letter-spacing="0">USER PREFERENCES</text>
+<text x="720" y="587" fill="#91A7BD" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" text-anchor="start" letter-spacing="0">User, project, current run</text>
+<path d="M610 330L655 420" stroke="#2E6D91" stroke-width="2"/>
+<path d="M700 330L655 420" stroke="#2E6D91" stroke-width="2"/>
+<path d="M610 515L655 420" stroke="#2E6D91" stroke-width="2"/>
+<path d="M700 515L655 420" stroke="#2E6D91" stroke-width="2"/>
+<circle cx="655" cy="420" r="91" fill="none" stroke="#155E75" stroke-width="2" stroke-dasharray="7 8"/>
+<circle cx="655" cy="420" r="70" fill="url(#core)" stroke="#67E8F9" stroke-width="3" filter="url(#glow)"/>
+<path d="M625 395L655 377L685 395L655 413Z M625 420L655 438L685 420 M625 444L655 462L685 444" fill="none" stroke="#E0F7FF" stroke-width="4" stroke-linejoin="round"/>
+<text x="655" y="492" fill="#DDFBFF" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" text-anchor="middle" letter-spacing="1">ORCHESTRATE</text>
+<path d="M960 420H1010" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)" filter="url(#glow)"/>
+<line x1="995" y1="190" x2="995" y2="650" stroke="#FBBF24" stroke-width="2" stroke-dasharray="6 8" opacity="0.8"/>
+<g transform="translate(1015 420) rotate(-90)"><text x="0" y="0" fill="#FCD34D" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800" text-anchor="middle" letter-spacing="1">APPROVAL GATE</text></g>
+<rect x="1040" y="150" width="420" height="550" rx="14" fill="#07111D" fill-opacity="0.88" stroke="#245176" stroke-width="2"/>
+<text x="1070" y="186" fill="#7DD3FC" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" text-anchor="start" letter-spacing="1">SCENE NATIVE ENGINE</text>
+<rect x="1315" y="165" width="112" height="30" rx="15" fill="#0A2A22" stroke="#34D399"/>
+<text x="1371" y="186" fill="#A7F3D0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="1">NATIVE</text>
+<rect x="1080" y="235" width="250" height="72" rx="8" fill="url(#panel)" stroke="#38BDF8" stroke-width="2"/>
+<circle cx="1110" cy="271" r="16" fill="#07111D" stroke="#38BDF8" stroke-width="2"/>
+<text x="1110" y="277" fill="#38BDF8" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="0">1</text>
+<text x="1138" y="278" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" letter-spacing="0">DESIGN CONTRACT</text>
+<path d="M1205 307V326" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1105" y="330" width="250" height="72" rx="8" fill="url(#panel)" stroke="#22D3EE" stroke-width="2"/>
+<circle cx="1135" cy="366" r="16" fill="#07111D" stroke="#22D3EE" stroke-width="2"/>
+<text x="1135" y="372" fill="#22D3EE" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="0">2</text>
+<text x="1163" y="373" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" letter-spacing="0">SCENE.JSON</text>
+<path d="M1230 402V421" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1130" y="425" width="250" height="72" rx="8" fill="url(#panel)" stroke="#A78BFA" stroke-width="2"/>
+<circle cx="1160" cy="461" r="16" fill="#07111D" stroke="#A78BFA" stroke-width="2"/>
+<text x="1160" y="467" fill="#A78BFA" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="0">3</text>
+<text x="1188" y="468" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" letter-spacing="0">CONSTRAINED SVG</text>
+<path d="M1255 497V516" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1155" y="520" width="250" height="72" rx="8" fill="url(#panel)" stroke="#34D399" stroke-width="2"/>
+<circle cx="1185" cy="556" r="16" fill="#07111D" stroke="#34D399" stroke-width="2"/>
+<text x="1185" y="562" fill="#34D399" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="0">4</text>
+<text x="1213" y="563" fill="#F7FBFF" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" letter-spacing="0">DRAWINGML</text>
+<path d="M1460 420H1500" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)" filter="url(#glow)"/>
+<rect x="1510" y="150" width="238" height="550" rx="14" fill="#07111D" fill-opacity="0.9" stroke="#2E6D91" stroke-width="2"/>
+<text x="1629" y="186" fill="#F8FBFF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="1">NATIVE PPTX</text>
+<path d="M1560 235H1670L1700 265V480H1560Z" fill="url(#panel)" stroke="#D9E6F2" stroke-width="3"/>
+<path d="M1670 235V265H1700" fill="none" stroke="#D9E6F2" stroke-width="3"/>
+<rect x="1588" y="292" width="82" height="92" rx="10" fill="#D34B2A" stroke="#FFB199" stroke-width="2"/>
+<text x="1629" y="358" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="64" font-weight="800" text-anchor="middle" letter-spacing="0">P</text>
+<circle cx="1630" cy="521" r="38" fill="#08271F" stroke="#34D399" stroke-width="3" filter="url(#glow)"/>
+<path d="M1608 521L1624 537L1653 505" fill="none" stroke="#6EE7B7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1629" y="594" fill="#A7F3D0" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle" letter-spacing="0">EDITABLE</text>
+<text x="1629" y="625" fill="#91A7BD" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" letter-spacing="0">REPAIR-FREE QA</text>
+<rect x="52" y="755" width="1696" height="92" rx="12" fill="#07111D" stroke="#245176" stroke-width="2"/>
+<line x1="155" y1="801" x2="1645" y2="801" stroke="#234A67" stroke-width="3"/>
+<circle cx="170" cy="801" r="18" fill="#081621" stroke="#38BDF8" stroke-width="3" filter="url(#glow)"/>
+<circle cx="170" cy="801" r="5" fill="#38BDF8"/>
+<text x="170" y="833" fill="#D8E7F3" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1">01  UNDERSTAND</text>
+<circle cx="455" cy="801" r="18" fill="#081621" stroke="#38BDF8" stroke-width="3" filter="url(#glow)"/>
+<circle cx="455" cy="801" r="5" fill="#38BDF8"/>
+<text x="455" y="833" fill="#D8E7F3" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1">02  STRUCTURE</text>
+<circle cx="740" cy="801" r="18" fill="#081621" stroke="#38BDF8" stroke-width="3" filter="url(#glow)"/>
+<circle cx="740" cy="801" r="5" fill="#38BDF8"/>
+<text x="740" y="833" fill="#D8E7F3" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1">03  DESIGN</text>
+<circle cx="1025" cy="801" r="18" fill="#081621" stroke="#38BDF8" stroke-width="3" filter="url(#glow)"/>
+<circle cx="1025" cy="801" r="5" fill="#38BDF8"/>
+<text x="1025" y="833" fill="#D8E7F3" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1">04  APPROVE</text>
+<circle cx="1310" cy="801" r="18" fill="#081621" stroke="#38BDF8" stroke-width="3" filter="url(#glow)"/>
+<circle cx="1310" cy="801" r="5" fill="#38BDF8"/>
+<text x="1310" y="833" fill="#D8E7F3" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1">05  REBUILD</text>
+<circle cx="1595" cy="801" r="18" fill="#081621" stroke="#34D399" stroke-width="3" filter="url(#glow)"/>
+<circle cx="1595" cy="801" r="5" fill="#34D399"/>
+<text x="1595" y="833" fill="#D8E7F3" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1">06  VERIFY</text>
+</svg>
